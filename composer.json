@@ -13,6 +13,7 @@
     "roots/soil": "^3.9",
     "wordplate/framework": "^8.0",
     "wordplate/plate": "^6.0",
+    "wpackagist-plugin/contact-form-7": "^5.1",
     "wpackagist-plugin/hide-updates": "^1.1"
   },
   "config": {
