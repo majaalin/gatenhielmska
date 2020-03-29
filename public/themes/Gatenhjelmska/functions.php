@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 // Register plugin helpers.
 require get_theme_file_path('includes/plugins/plate.php');
-require get_template_directory().'/post-types/news.php';
-require get_template_directory().'/post-types/members.php';
+require get_template_directory() . '/post-types/news.php';
+require get_template_directory() . '/post-types/members.php';
 
 // Set theme defaults.
 add_action('after_setup_theme', function () {
