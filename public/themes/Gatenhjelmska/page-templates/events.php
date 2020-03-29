@@ -2,6 +2,7 @@
 
 <?php get_header(); ?>
 <section class="events">
+    <h1>andreas</h1>
     <div>
         <div>
             <?php if (have_posts()) : ?>
