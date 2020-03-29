@@ -1,7 +1,7 @@
 <?php /* Template name: News */ ?>
 
 <?php get_header(); ?>
-<section class="home">
+<section class="news">
     <div>
         <div>
             <?php if (have_posts()) : ?>
