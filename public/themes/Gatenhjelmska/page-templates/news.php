@@ -1,16 +1,26 @@
 <?php /* Template name: News */ ?>
 
 <?php get_header(); ?>
+
 <section class="news">
-    <div>
-        <div>
-            <?php if (have_posts()) : ?>
-                <?php while (have_posts()) : the_post(); ?>
-                    <h1><?php the_title(); ?></h1>
-                    <?php the_content(); ?>
-                <?php endwhile; ?>
-            <?php endif; ?>
-        </div><!-- /col -->
-    </div><!-- /row -->
+    <h1>Artiklar, Blogg, Nyheter</h1>
+<?php if (count($news)): ?>
+            <ul class="news-wrapper">
+                <?php foreach ($news as $post): setup_postdata($post);?>
+                    <li class="news-container">
+                    <?php 
+$image = get_field('image');
+if( !empty( $image ) ): ?>
+    <img class="news-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+<?php endif; ?>
+<div class="text-container">
+<p><?php the_field('date'); ?></p>
+                    <p><?php the_title(); ?></p>
+                    <p><?php the_field('text'); ?></p>
+                    </div>
+                <?php endforeach; ?>
+            </ul>
+<?php endif; ?>
 </section>
+
 <?php get_footer(); ?>
