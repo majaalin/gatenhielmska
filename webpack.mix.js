@@ -1,7 +1,6 @@
 const mix = require("laravel-mix");
 
 require("dotenv").config();
-require("laravel-mix-eslint");
 
 /*
  |--------------------------------------------------------------------------
@@ -15,11 +14,6 @@ require("laravel-mix-eslint");
  */
 
 const theme = process.env.WP_THEME;
-
-mix.js("resources/assets/js/app.js", "public/js").eslint({
-  fix: false,
-  cache: false
-});
 
 mix.setResourceRoot("../");
 mix.setPublicPath(`public/themes/${theme}/assets`);
