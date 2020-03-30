@@ -1,5 +1,44 @@
 .news {
-  h1{
-    color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-color: #2F2F2F;
+
+  h1 {
+    font-family: 'EB Garamond', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  .news-wrapper {
+    .news-container {
+      display: flex;
+      align-items: center;
+      padding: 28px;
+      max-width: 1010px;
+
+      .news-img {
+        width: 201px;
+        height: 158px;
+        object-fit: cover;
+        margin-right: 28px
+      }
+
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 158px;
+
+        p {
+          color: #FFFFFF;
+        }
+      }
+    }
   }
 }
