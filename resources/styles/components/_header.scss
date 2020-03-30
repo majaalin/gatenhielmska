@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    position: absolute;
+
+    ul {
+        display: flex;
+        width: 40vw;
+        justify-content: space-around;
+
+        li {
+            list-style: none;
+            
+            .sub-menu {
+                display: none;
+            }
+
+            a {
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+
+        }
+    }
+}

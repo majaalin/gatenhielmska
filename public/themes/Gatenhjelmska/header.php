@@ -9,6 +9,7 @@
 </head>
 <body <?php body_class(); ?>>
     <header>
+    <img src="" alt="">
         <nav role="navigation">
             <?php wp_nav_menu(['theme_location' => 'navigation']); ?>
         </nav>
