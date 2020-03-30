@@ -1,10 +1,9 @@
 header {
     display: flex;
     justify-content: space-between;
-    width: calc(100vw - 100px);
+    width: calc(100vw - 40px);
     height: 100px;
-    position: absolute;
-    padding: 20px 50px;
+    padding: 20px 0px 20px 40px;
 
     .logo {
         width: 184.58px;
@@ -14,16 +13,19 @@ header {
     .menu-menu-container {
         margin: 0;
         padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
     }
 
     ul {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-evenly;
 
         .menu-item-has-children {
             a:nth-last-child(2)::after {
-                content: '\25BC';
-                font-size: 12px;
+                content: '\25BE';
+                font-size: 14px;
                 margin-left: 5px;
             }
         }
@@ -32,7 +34,9 @@ header {
             list-style: none;
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             line-height: 0;
+            width: 120px;
 
             
             .sub-menu {
@@ -46,6 +50,7 @@ header {
                 a {
                     margin: 15px 0;
                     font-size: 12px;
+                    font-weight: 300;
                 }
             }
 
@@ -53,10 +58,9 @@ header {
                 color: #FFFFFF;
                 text-decoration: none;
                 padding: 0 20px;
-                width: 110px;
                 font-family: Poppins;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 400;
                 font-size: 14px;
             }
 

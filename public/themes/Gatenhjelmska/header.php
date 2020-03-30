@@ -15,5 +15,6 @@
 ?>
 
 <img class="logo" src="<?php echo $image[0]; ?>" alt="">
+
             <?php wp_nav_menu(['theme_location' => 'navigation']); ?>
     </header>
