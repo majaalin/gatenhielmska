@@ -9,18 +9,25 @@
     font-family: 'EB Garamond', serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 72px;
+    font-size: 48px;
     line-height: 150%;
     color: #FFFFFF;
     text-align: center;
   }
 
+  ul :first-child {
+    h3:first-of-type{
+      font-size: 72px !important;
+    }
+  }
+
   .news-wrapper {
+
     .news-container {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      justify-content: space-between;
       padding: 28px;
-      max-width: 1010px;
 
       .news-img {
         width: 201px;
@@ -37,8 +44,34 @@
 
         p {
           color: #FFFFFF;
+
+        }
+
+        h3 {
+          font-family: EB Garamond;
+          font-style: normal; 
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 120%;
+          color: #FFFFFF;
+        }
+
+        .date {
+          font-family: EB Garamond;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 120%;
+        }
+        
+        .summary {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+        }
         }
       }
     }
   }
-}
