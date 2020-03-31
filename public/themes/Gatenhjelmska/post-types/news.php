@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 add_action('init', function () {
     register_post_type('news', [
-        'has_archive' => true,
+        'has_archive' => false,
         'labels' => [
             'add_new_item' => __('Add News'),
             'edit_item' => __('Edit Nrews'),
@@ -23,7 +23,7 @@ add_action('init', function () {
         'menu_position' => 20,
         'public' => true,
         'show_in_rest' => true,
-        'taxonomies' => array('image'),
+        'taxonomies' => array('image')
     ]);
 });
 

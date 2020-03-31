@@ -19,7 +19,7 @@
   }
 
   ul :first-child {
-    h3:first-of-type{
+    a:first-of-type{
       font-size: 72px !important;
       margin-top: 0;
       margin-bottom: 0;
@@ -53,7 +53,7 @@
 
         }
 
-        h3 {
+        a {
           font-family: EB Garamond;
           font-style: normal; 
           font-weight: bold;
@@ -61,6 +61,11 @@
           line-height: 120%;
           color: #FFFFFF;
           margin: 4px 0px;
+          text-decoration: none;
+        }
+
+        a:hover {
+          text-decoration: underline;
         }
 
         .date {

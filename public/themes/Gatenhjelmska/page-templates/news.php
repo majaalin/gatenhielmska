@@ -17,7 +17,7 @@ if( !empty( $image ) ): ?>
 <?php endif; ?>
 <div class="text-container">
 <p class="date">Publicerad: <?php the_field('date'); ?></p>
-                    <h3 class="title"><?php the_title(); ?></h3>
+                    <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     <p class="summary"><?php the_field('summary'); ?></p>
                     </div>
                 <?php endforeach; ?>
