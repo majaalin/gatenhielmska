@@ -5,9 +5,12 @@
     color: #EBEBEB;
     display: flex;
     align-items: center;
+    bottom: 0;
+
 
     ul:first-child {
         margin-left: 44px; 
+        max-width: 1440px;
     }
 
     ul {
