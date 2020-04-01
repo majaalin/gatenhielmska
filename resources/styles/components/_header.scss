@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: calc(100vw - 40px);
-    max-width: 1500px;
+    max-width: 1410px;
     height: 100px;
     padding: 20px 0;
     margin: 0 auto;
@@ -10,6 +10,7 @@ header {
     .logo {
         width: 184.58px;
         height: 37.5px;
+        padding-left: 40px;
     }
 
     .menu-menu-container {
@@ -17,12 +18,11 @@ header {
         padding: 0;
         display: flex;
         justify-content: flex-end;
-        width: 100%;
     }
 
     ul {
         display: flex;
-        justify-content: space-evenly;
+        padding-inline-start: 0px;
 
         .menu-item-has-children {
             a:nth-last-child(2)::after {

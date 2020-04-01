@@ -1,0 +1,36 @@
+.footer {
+    width: 100vw;
+    height: 397px;
+    background-color: #8C8C8C;
+    color: #EBEBEB;
+    display: flex;
+    align-items: center;
+
+    ul:first-child {
+        margin-left: 44px; 
+    }
+
+    ul {
+        list-style: none;
+        margin: 0 12px;
+        padding: 0;
+
+
+        li {
+            width: 200px;
+            padding: 4px 0;
+
+
+            a {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color: #EBEBEB;
+                text-decoration: none;
+
+            }
+        }
+    }
+}
