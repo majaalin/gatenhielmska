@@ -1,0 +1,193 @@
+<<<<<<< Updated upstream
+=======
+.history {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #050505;
+
+    .history-wrapper {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            display: flex;
+
+            div {
+                width: 50%;
+                max-width: 480px;
+                padding-bottom: 100px;
+                padding-top: 30px;
+
+                .year{
+                    text-align: right;
+                    font-family: EB Garamond;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 36px;
+                    letter-spacing: 0.1em;
+                    color: #FFFFFF;
+                    margin: 0 24px;
+                }
+
+                .year::after {
+                    content: "\25CF";
+                    display: inline-block;
+                    position: absolute;
+                    padding-left: 22px;
+                    background-color:  #050505;
+                    font-size: 14px;
+                    line-height: 18px;
+                    margin-top: 5px;
+                    
+                    
+                }
+
+                .history-img {
+                    height: 280px;
+                    width: 400px;
+                    object-fit: scale-down;
+                    margin: 24px;
+                }
+
+                .title {
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 30px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.1em;
+                    color: #FFFFFF;
+                    margin: 0 24px;
+                }
+
+                .content {
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #FFFFFF;
+                    margin: 20px;
+                }
+            }
+
+            div:first-of-type {
+                border-right: 3px solid #FFFFFF;
+            }
+        }
+
+        .uneven-mobile {
+            display: none;
+        }
+
+        .uneven-desktop {
+
+            .year {
+                text-align: left;
+            }
+
+            .year::after {
+                display: none;
+            }
+
+            .year::before {
+                content: "\25CF";
+                display: inline-block;
+                position: absolute;
+                padding: 0;
+                background-color: #121212;
+                font-size: 14px;
+                line-height: 18px;
+                margin-top: 5px;
+                margin-left: -29px;
+            }
+
+            .history-img {
+                margin-left: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .history {
+        display: flex;
+
+        .history-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .even, .uneven-mobile  {
+                display: flex;
+                flex-direction: column;
+                border-left: 2px solid #FFFFFF;
+                padding-top: 20px;
+                padding-bottom: 80px;
+    
+                div {
+                    width: 100vw;
+                    padding-bottom: 0px;
+                    padding-top: 0px;
+    
+                    .year{
+                        text-align: left;
+                        font-size: 24px;
+                        color: #EBEBEB;
+                        opacity: 0.85;
+                    }
+    
+                    .year::after {
+                        display: none;  
+                    }
+
+                    .year::before {
+                        content: "\25CF";
+                        display: inline-block;
+                        position: absolute;
+                        padding: 0;
+                        background-color: #121212;
+                        font-size: 14px;
+                        line-height: 18px;
+                        margin-top: 5px;
+                        margin-left: -29px;
+                    }
+    
+                    .history-img {
+                        width: calc(95% - 24px);
+                        object-fit: scale-down;
+                        margin: 24px;
+                    }
+    
+                    .title {
+                        font-weight: 600;
+                        font-size: 24px;
+                        color: #EBEBEB;
+                    }
+    
+                    .content {
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 21px;
+                        opacity: 0.85;
+                        color: #EBEBEB;
+                        margin: 20px 24px;
+                    }
+                }
+    
+                div:first-of-type {
+                    border-right: none;
+                }
+            }
+
+            .uneven-desktop {
+                display: none;
+            }
+    }
+}
+    }
+>>>>>>> Stashed changes
