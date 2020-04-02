@@ -24,7 +24,7 @@ if( !empty( $image ) ): ?>
       <?php endif; ?>
 
 <div class="related"> 
-<a href="">Alla ariklar</a>
+<a class="more" href="">Alla ariklar</a>
 <p>Relaterade artiklar</p> 
 <div class="related-wrapper">
 <?php $news = get_posts(['post_type' => 'news']); ?>
@@ -42,9 +42,9 @@ if( !empty( $image ) ): ?>
                     <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     <p class="summary"><?php the_field('summary'); ?></p>
                     </div>
-            </ul>
               <?php endfor ?>
 <?php endif; ?>
+</ul>
 </div>     
 </div>  
       

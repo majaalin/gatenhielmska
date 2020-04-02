@@ -3,14 +3,19 @@
     height: 397px;
     background-color: #8C8C8C;
     color: #EBEBEB;
-    display: flex;
-    align-items: center;
     bottom: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    .wrapper {
+        width: calc(100vw + 112px);
+        max-width: calc(1440px + 112px);
+        display: flex;
 
     ul:first-child {
-        margin-left: 44px; 
-        max-width: 1440px;
+        margin-left: 56px; 
     }
 
     ul {
@@ -36,4 +41,5 @@
             }
         }
     }
+}
 }

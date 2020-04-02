@@ -43,7 +43,7 @@
         height: 755px;
         width: calc(100vw - 112px);
         object-fit: cover;
-        max-width: 1410px;
+        max-width: 1440px;
     }
 
     span {
@@ -71,22 +71,31 @@
 }
 
 .related {
-    width: 100vw;
-    max-width: 1410px;
+    width: calc(100vw - 112px);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 56px;
+
+.related > a::after {
+    content: " \2192";
+    display: inline-block;
+    margin-left: 8px;
+    text-decoration: none;
+}
 
     a {
         font-family: Poppins;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 300;
         font-size: 16px;
         line-height: 150%;
         letter-spacing: -0.02em;
         text-decoration: underline;
         color: #EBEBEB;
-        margin: 0 56px;
+        margin: 0;
     }
 
-    a::after {
+    .more::after {
         content: " \2192";
         display: inline-block;
         margin-left: 8px;
@@ -96,42 +105,48 @@
     p {
         font-family: EB Garamond;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 300;
         font-size: 24px;
         line-height: 130%;
         color: #EBEBEB;
-        margin: 0 56px;
+        margin: 0;
+        margin-bottom: 4px;
     }
 
     .related-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         padding: 0;
-        margin: 0 56px;
         margin-bottom: 246px;
-        padding-top: 32px;
+        padding-top: 0px;
+        max-width: 1440px;
         border-top: 1px solid #EBEBEB;
 
         .related-news-wrapper{
             padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
         }
 
         .related-news-container{
             list-style: none;
-            width: 427px;
+            max-width: 427px;
+            width: 100%;
+            margin: 10px 0;
+            padding: 0 1px;
 
         img {
-            width: 427px;
-            height: 216.61px;
-            margin: 0;
+            width: 100%;
+            max-height: 216.61px;
+            max-width: 427px;
         }
 
         .date {
             font-family: Open Sans;
             font-style: normal;
-            font-weight: normal;
+            font-weight: 300;
             font-size: 16px;
+            margin: 8px 0;
             line-height: 130%;
             color: #EBEBEB;
         }
@@ -139,12 +154,13 @@
         .title {
             font-family: EB Garamond;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
             line-height: 130%;
             font-size: 24px;
             color: #EBEBEB;
             text-decoration: none;
             margin: 0;
+            margin-bottom: 4px;
         }
 
         .title:hover {
@@ -155,11 +171,12 @@
             text-align: left;
             font-family: Roboto;
             font-style: normal;
-            font-weight: normal;
+            font-weight: 400;
             font-size: 18px;
             line-height: 150%;
             color: #EBEBEB;
             margin: 0;
+            margin-top: 4px;
         }
     }
 }
