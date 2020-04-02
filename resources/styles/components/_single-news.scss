@@ -181,3 +181,140 @@
     }
 }
     }
+
+
+    @media screen and (max-width: 960px) {
+
+        .single-news {
+            padding: 0 16px;
+        
+            .background-light-gray {
+                height: 484px;
+            }
+        
+            .date {
+                font-family: EB Garamond;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 150%;
+            }
+        
+            h1 {
+            font-size: 32px;
+            line-height: 100%;
+            font-weight: 600;
+            max-width: 342px; 
+            }
+        
+            .summary {
+                max-width: 342px;
+                margin-bottom: 32px;
+            }
+        
+            .news-img {
+                width: calc(100vw - 32px);
+                height: 213.21px;
+            }
+        
+            span {
+                margin-bottom: 32px;
+                font-size: 14px;
+            }
+        
+            .content {
+                width: calc(100vw - 32px);
+                margin-bottom: 46px;
+        
+                figure {
+                    width: calc(100vw - 32px) !important;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-top: 15px;
+                }
+
+                .wp-caption-text {
+                    font-size: 14px;
+                }
+        
+                img {
+                    min-width: 0;
+                    width: calc(100vw - 32px);
+                    min-height: 0;
+                    object-fit: cover;
+                }
+            }
+        }
+        
+        .related {
+            width: calc(100vw - 32px);
+            margin: 0;
+            padding: 26px 16px;
+            background-color: #8C8C8C;
+        
+        .related > a::after {
+            content: " \2192";
+            display: inline-block;
+            margin-left: 8px;
+            text-decoration: none;
+        }
+        
+            a {
+                font-family: EB Garamond;
+                font-weight: bold;
+            }
+        
+            .more::after {
+                content: " \2192";
+                display: inline-block;
+                margin-left: 8px;
+                text-decoration: none;
+            }
+        
+            p {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 150%;
+            }
+        
+            .related-wrapper {
+                margin-bottom: 20px;
+        
+                .related-news-wrapper{
+                    display: flex;
+                    flex-direction: column;
+                }
+        
+                .related-news-container{
+                    margin: 16px 0;
+        
+                .date {
+                    font-family: EB Garamond;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 150%;
+                }
+        
+                .title {
+                    font-weight: bold;
+                    line-height: 120%;
+                    font-size: 24px;
+                }
+        
+                .summary {
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    margin-top: 8px;
+                    max-width: 100%;
+                }
+            }
+        }
+            }
+
+
+    }
