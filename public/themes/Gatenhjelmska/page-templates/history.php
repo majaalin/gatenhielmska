@@ -6,7 +6,8 @@
 	'post_type'			=> 'history',
 	'meta_key'			=> 'year',
 	'orderby'			=> 'meta_value',
-	'order'				=> 'ASC'
+    'order'				=> 'ASC',
+    "posts_per_page"   => '30',
 )); ?>
 
 <section class="history">
