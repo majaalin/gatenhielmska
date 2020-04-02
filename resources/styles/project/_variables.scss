@@ -1,7 +1,32 @@
 // In this file you can keep all your Sass variables.
-$font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 
-$color-dark: #333;
+$font-primary: "EB Garamond","Poppins",-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$color-dark: #050505;
+$color-dark01: #1E1E1E;
+$color-dark02: #232323;
+$color-dark03: #252525;
+$color-dark04: #272727;
+$color-dark05: #2C2C2C;
+$color-dark06: #2F2F2F;
+$color-dark07: #333333;
+$color-dark08: #353535;
+$color-dark09: #383838;
+
+$h1-mobile: 18px;
+$h1-small : 24px;
+$h1-medium: 40px;
+$h1-large : 72px;
+
+
+
+$font-style: normal;
+
+
+
+
 $color-grey: #777;
 $color-darkGrey: #6b6b6b;
 $color-light: #fff;
@@ -9,3 +34,5 @@ $color-light: #fff;
 $color-pink: #d92d86;
 $color-purple: #9f23fb;
 $color-red: #f82634;
+
+

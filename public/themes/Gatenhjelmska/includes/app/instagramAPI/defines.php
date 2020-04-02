@@ -1,0 +1,4 @@
+<?php
+define('INSTAGRAM_APP_ID', '157344015441260');
+define('INSTAGRAM_APP_SECRET', '5e43e6fd49325263e60dd6445f47ca5e');
+define('INSTAGRAM_APP_REDIRECT_URI', 'http://localhost:8000/');

@@ -1,1 +1,1 @@
-const maja = document.querySelector('andreas');
+console.log('andreas');

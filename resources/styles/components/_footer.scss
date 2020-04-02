@@ -1,5 +1,5 @@
 .footer {
-    width: 100vw;
+    width: 100%;
     height: 397px;
     background-color: #8C8C8C;
     color: #EBEBEB;
@@ -15,7 +15,7 @@
         display: flex;
 
     ul:first-child {
-        margin-left: 56px; 
+        margin-left: 56px;
     }
 
     ul {
