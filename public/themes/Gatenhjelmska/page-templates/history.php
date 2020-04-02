@@ -18,10 +18,10 @@
                     <div>
                         <p class="year"><?php the_field('year'); ?></p>
                         <?php 
-$image = get_field('image');
-if( !empty( $image ) ): ?>
-    <img class="history-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-<?php endif; ?>
+                            $image = get_field('image');
+                                if( !empty( $image ) ): ?>
+                                    <img class="history-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                        <?php endif; ?>
                     </div>
                     <div>
                     <p class="title"><?php the_field('title'); ?></p>
@@ -29,7 +29,7 @@ if( !empty( $image ) ): ?>
                     </div>
 </li>
                     <?php else : ?>
-                        <li class="uneven">
+                        <li class="uneven-desktop">
                         <div>
                     <p class="title"><?php the_field('title'); ?></p>
                     <p class="content"><?php the_field('content'); ?></p>
@@ -41,6 +41,20 @@ $image = get_field('image');
 if( !empty( $image ) ): ?>
     <img class="history-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 <?php endif; ?>
+                    </div>
+                    </li>
+                    <li class="uneven-mobile">
+                        <div>
+                        <p class="year"><?php the_field('year'); ?></p>
+                        <?php 
+$image = get_field('image');
+if( !empty( $image ) ): ?>
+    <img class="history-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+<?php endif; ?>
+                    </div>
+                    <div>
+                    <p class="title"><?php the_field('title'); ?></p>
+                    <p class="content"><?php the_field('content'); ?></p>
                     </div>
                     </li>
                     <?php endif ?>

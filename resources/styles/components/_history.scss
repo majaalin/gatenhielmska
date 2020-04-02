@@ -2,6 +2,7 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    background-color: #121212;
 
     .history-wrapper {
         width: 100vw;
@@ -13,6 +14,7 @@
             display: flex;
 
             div {
+                width: 50%;
                 max-width: 480px;
                 padding-bottom: 100px;
                 padding-top: 30px;
@@ -33,7 +35,7 @@
                     display: inline-block;
                     position: absolute;
                     padding-left: 22px;
-                    background-color: #121212;
+                    background-color:  #121212;
                     font-size: 14px;
                     line-height: 18px;
                     margin-top: 5px;
@@ -43,7 +45,7 @@
 
                 .history-img {
                     height: 280px;
-                    width: 439px;
+                    width: 400px;
                     object-fit: scale-down;
                     margin: 24px;
                 }
@@ -76,7 +78,11 @@
             }
         }
 
-        .uneven {
+        .uneven-mobile {
+            display: none;
+        }
+
+        .uneven-desktop {
 
             .year {
                 text-align: left;
@@ -97,6 +103,88 @@
                 margin-top: 5px;
                 margin-left: -29px;
             }
+
+            .history-img {
+                margin-left: 40px;
+            }
         }
     }
 }
+
+@media screen and (max-width: 960px) {
+    .history {
+        display: flex;
+
+        .history-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .even, .uneven-mobile  {
+                display: flex;
+                flex-direction: column;
+                border-left: 2px solid #FFFFFF;
+                padding-top: 20px;
+                padding-bottom: 80px;
+    
+                div {
+                    width: 100vw;
+                    padding-bottom: 0px;
+                    padding-top: 0px;
+    
+                    .year{
+                        text-align: left;
+                        font-size: 24px;
+                        color: #EBEBEB;
+                        opacity: 0.85;
+                    }
+    
+                    .year::after {
+                        display: none;  
+                    }
+
+                    .year::before {
+                        content: "\25CF";
+                        display: inline-block;
+                        position: absolute;
+                        padding: 0;
+                        background-color: #121212;
+                        font-size: 14px;
+                        line-height: 18px;
+                        margin-top: 5px;
+                        margin-left: -29px;
+                    }
+    
+                    .history-img {
+                        width: calc(95% - 24px);
+                        object-fit: scale-down;
+                        margin: 24px;
+                    }
+    
+                    .title {
+                        font-weight: 600;
+                        font-size: 24px;
+                        color: #EBEBEB;
+                    }
+    
+                    .content {
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 21px;
+                        opacity: 0.85;
+                        color: #EBEBEB;
+                        margin: 20px 24px;
+                    }
+                }
+    
+                div:first-of-type {
+                    border-right: none;
+                }
+            }
+
+            .uneven-desktop {
+                display: none;
+            }
+    }
+}
+    }
