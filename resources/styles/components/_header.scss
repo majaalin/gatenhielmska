@@ -41,7 +41,7 @@ header {
             line-height: 0;
             width: 120px;
 
-            
+
             .sub-menu {
                 display: flex;
                 visibility: hidden;
@@ -73,7 +73,7 @@ a:focus + .sub-menu {
 }
 
         }
-        
+
     }
 }
 
@@ -100,9 +100,9 @@ a:focus + .sub-menu {
             width: 24px;
             margin-top: 5px;
           }
-          
-          .nav-icon:after, 
-          .nav-icon:before, 
+
+          .nav-icon:after,
+          .nav-icon:before,
           .nav-icon div {
             background-color: #fff;
             border-radius: 3px;
