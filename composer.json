@@ -19,6 +19,7 @@
     "wpackagist-plugin/duplicate-post": "^3.2",
     "wpackagist-plugin/hide-updates": "^1.1",
     "wpackagist-plugin/polylang": "^2.6",
+    "wpackagist-plugin/so-widgets-bundle": "^1.16",
     "wpackagist-plugin/wp-mail-smtp": "^1.9"
   },
   "config": {

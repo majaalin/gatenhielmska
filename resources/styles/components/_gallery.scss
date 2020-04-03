@@ -5,7 +5,7 @@
   justify-content: center;
   flex-direction: row;
 
-  .gallery-outer-container {
+  .gallery-wrapper {
     width: 100%;
     box-sizing: border-box;
 
@@ -43,7 +43,7 @@
 
 @media screen and (min-width: 960px) {
   .gallery {
-    .gallery-outer-container {
+    .gallery-wrapper {
       max-width: 1440px;
       h1 {
         font-size: $h1-large;

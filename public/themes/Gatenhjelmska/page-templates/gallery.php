@@ -27,7 +27,7 @@ $usersMedia = json_decode($data, true);
 
 <?php get_header(); ?>
 <section class="gallery">
-    <div class="gallery-outer-container">
+    <div class="gallery-wrapper">
         <h1>Galleriet</h1>
         <div class="gallery-container">
             <?php foreach ($usersMedia['data'] as $post) : ?>
