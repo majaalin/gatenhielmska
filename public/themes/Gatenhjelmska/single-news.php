@@ -25,7 +25,7 @@ if( !empty( $image ) ): ?>
 
 <div class="related"> 
 <a class="more" href="">Alla ariklar</a>
-<p>Relaterade artiklar</p> 
+<h3>Relaterade artiklar</h3> 
 <div class="related-wrapper">
 <?php $news = get_posts(['post_type' => 'news']); ?>
 <?php if (count($news)): ?>
@@ -39,8 +39,7 @@ if( !empty( $image ) ): ?>
 <?php endif; ?>
 <div class="text-container">
 <p class="date">Publicerad: <?php the_field('date'); ?></p>
-                    <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    <p class="summary"><?php the_field('summary'); ?></p>
+                    <h4><a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                     </div>
               <?php endfor ?>
 <?php endif; ?>

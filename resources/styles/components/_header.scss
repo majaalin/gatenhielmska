@@ -21,8 +21,8 @@ header {
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: rgb(5,5,0,0.8);
-    box-shadow: 0 3px 5px  rgb(5,5,0,0.3);
+    background-color: $color-dark;
+    box-shadow: 0 3px 5px  $color-dark;
 
     .logo {
         margin-left: 20px;

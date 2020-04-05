@@ -2,7 +2,6 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    background-color: #050505;
 
     .history-wrapper {
         width: 100vw;
@@ -35,7 +34,7 @@
                     display: inline-block;
                     position: absolute;
                     padding-left: 22px;
-                    background-color:  #050505;
+                    background-color:  $color-dark;
                     font-size: 14px;
                     line-height: 18px;
                     margin-top: 5px;
@@ -74,7 +73,7 @@
             }
 
             div:first-of-type {
-                border-right: 3px solid #FFFFFF;
+                border-right: 3px solid #373737;
             }
         }
 
@@ -97,7 +96,7 @@
                 display: inline-block;
                 position: absolute;
                 padding: 0;
-                background-color: #121212;
+                background-color: $color-dark;
                 font-size: 14px;
                 line-height: 18px;
                 margin-top: 5px;
@@ -123,7 +122,7 @@
             .even, .uneven-mobile  {
                 display: flex;
                 flex-direction: column;
-                border-left: 2px solid #FFFFFF;
+                border-left: 3px solid #373737;
                 padding-top: 20px;
                 padding-bottom: 80px;
     
@@ -148,7 +147,7 @@
                         display: inline-block;
                         position: absolute;
                         padding: 0;
-                        background-color: #121212;
+                        background-color: $color-dark;
                         font-size: 14px;
                         line-height: 18px;
                         margin-top: 5px;
