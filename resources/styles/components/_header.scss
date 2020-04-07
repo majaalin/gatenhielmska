@@ -97,7 +97,7 @@ header {
                 transition: transform 1s ease-in;
                 transition: opacity 0.2s ease-in;
                 opacity: 0;
-                background-color: rgba(13, 17, 23, 0.85);
+                transition: background-color ease-in 0.5s;
 
                 li {
                     width: auto;
