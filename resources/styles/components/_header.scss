@@ -25,6 +25,7 @@ header {
         justify-content: space-between;
         align-items: center;
         max-width: 1440px;
+        height: 34px;
         width: 100vw;
 
     
@@ -94,7 +95,7 @@ header {
                 justify-content: center;
                 visibility: hidden;
                 font-size: 12px;
-                margin: 0;
+                margin: -2px;
                 padding: 20px 0;
                 width: 177px;
                 transform: translateY(-100px);
@@ -150,19 +151,22 @@ a:focus + .sub-menu, a:hover + .sub-menu{
 
 
         }
-    }}
 
-    .sub-menu:hover {
-        visibility: visible;
-        height: auto;
-        opacity: 1;
-        z-index: 4;
-        transform: translateX(0);
-
-        a {
+        .sub-menu:hover {
+            visibility: visible;
+            height: auto;
             opacity: 1;
+            z-index: 4;
+            transform: translateX(0);
+    
+            a {
+                opacity: 1;
+            }
         }
     }
+
+}
+
 
 
 
