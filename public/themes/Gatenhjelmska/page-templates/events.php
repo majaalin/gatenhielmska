@@ -1,6 +1,5 @@
 <?php /* Template name: Events */ ?>
 
-
 <?php get_header(); ?>
 <section class="events">
     <div>

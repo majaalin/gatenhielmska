@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 add_action('init', function () {
     register_post_type('history', [
-        'has_archive' => true,
+        'has_archive' => false,
         'labels' => [
             'add_new_item' => __('Add New History'),
             'edit_item' => __('Edit History'),
@@ -14,7 +14,7 @@ add_action('init', function () {
             'featured_image' => _('Featured Image'),
             'set_featured_image' => __('Set featured image'),
         ],
-				'supports' => [
+        'supports' => [
             'title',
             'editor',
             'thumbnail',
@@ -26,4 +26,3 @@ add_action('init', function () {
         'taxonomies' => array('image'),
     ]);
 });
-
