@@ -1,7 +1,7 @@
 // In this file you put all styles related to typography such as p, a, h1, etc.
 
 body {
-  color: #ffffff;
+  color: #EBEBEB;
   font-family: $font-primary;
   font-size: 16px;
   line-height: 26px;
@@ -9,4 +9,43 @@ body {
 
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+h1 {
+  font-family: EB Garamond;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 120%;
+  text-align: center;
+  color: #EBEBEB;
+}
+
+h2 {
+  font-family: EB Garamond;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  text-align: center;
+  color: #EBEBEB;
+}
+
+h3 {
+  font-family: EB Garamond;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  color: #EBEBEB;
+}
+
+h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #EBEBEB;
+}
+
 

@@ -5,32 +5,10 @@
   width: 100vw;
 
   h1 {
-    font-family: 'EB Garamond', serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 150%;
     margin-top: 0;
-    color: #EBEBEB;
     text-align: center;
     margin-top: 60px;
     margin-bottom: 90px;
-  }
-
-  ul :first-child {
-    a:first-of-type{
-      font-size: 32px !important;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-
-  ul :nth-of-type(2) {
-    a:first-of-type{
-      font-size: 32px !important;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
   }
 
   .news-wrapper {
@@ -40,11 +18,13 @@
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
-      padding: 20px 24px;
+      padding: 0;
+      margin: 20px 0;
+      background-color: $color-dark01;
 
       .news-img {
         width: 201px;
-        height: 158px;
+        height: 145px;
         object-fit: cover;
         margin-right: 28px
       }
@@ -52,20 +32,15 @@
       .text-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        min-height: 158px;
-        max-width: 675px;
+        justify-content: center;
+        min-height: 145px;
+        max-width: 597px;
 
 
         a {
-          font-family: EB Garamond;
-          font-style: normal; 
-          font-weight: bold;
-          font-size: 24px;
-          line-height: 120%;
-          color: #EBEBEB;
           margin: 4px 0px;
           text-decoration: none;
+          color: #EBEBEB;
         }
 
         a:hover {

@@ -10,6 +10,7 @@
 
 <body <?php body_class(); ?>>
     <header class="desktop">
+        <div class="wrapper">
         <?php
         $custom_logo_id = get_theme_mod('custom_logo');
         $image = wp_get_attachment_image_src($custom_logo_id, 'full');
@@ -20,6 +21,6 @@
     <header class="mobile">
         <img class="logo" src="<?php echo $image[0]; ?>" alt="">
         <div class="nav-icon">
-            <div></div>
+</div>
         </div>
     </header>
