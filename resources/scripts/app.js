@@ -18,3 +18,22 @@ function scrollFunction() {
     });
   }
 }
+
+const hamburger = document.querySelector(".nav-icon");
+
+hamburger.addEventListener("click", open);
+
+function open() {
+  const menu = document.querySelector(".mobile-menu ");
+  menu.classList.toggle("open");
+  // document.body.classList.toggle("overflow-hidden");
+}
+
+// function openMenu() {
+//   const mobile = document.querySelector(".mobile");
+//   const mobilMenu = mobile.querySelectorAll(".sub-menu");
+
+//   mobilMenu.forEach(menu => {
+//     menu.classList.toggle("sub-menu-open");
+//   });
+//   console.log(mobilMenu);

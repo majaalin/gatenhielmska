@@ -17,10 +17,12 @@
         ?>
         <img class="logo" src="<?php echo $image[0]; ?>" alt="">
         <?php wp_nav_menu(['theme_location' => 'navigation']); ?>
+        </div>
     </header>
     <header class="mobile">
         <img class="logo" src="<?php echo $image[0]; ?>" alt="">
-        <div class="nav-icon">
-</div>
+        <div class="nav-icon"></div>
+        <div class="mobile-menu">
+        <?php wp_nav_menu(['theme_location' => 'navigation']); ?>
         </div>
     </header>
