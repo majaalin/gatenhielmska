@@ -1,5 +1,19 @@
-/* eslint-disable-next-line */
-// console.log(php_data.jsonData);
+import PreloadningScreen from './pageLoadWrap';
+
+// Preloadning Screen on landing page
+PreloadningScreen.templatePageLoad();
+
+const myStorage = window.sessionStorage;
+console.log(myStorage.getItem('hasCodeRunBefore'));
+
+if (myStorage.getItem('hasCodeRunBefore') === null) {
+  setTimeout(() => {
+    PreloadningScreen.onLoadWrap();
+    myStorage.setItem('hasCodeRunBefore', 'yes');
+  }, 2000);
+} else {
+  PreloadningScreen.onLoadWrap2();
+}
 
 function scrollFunction() {
   const subMenu = document.querySelectorAll('.sub-menu');
@@ -39,17 +53,3 @@ hamburger.addEventListener('click', open);
 //     menu.classList.toggle("sub-menu-open");
 //   });
 //   console.log(mobilMenu);
-
-const onLoadWrap = () => {
-  const wrap = document.querySelector('.loader-wrap');
-  const loaderContainer = document.querySelector('.loader-container');
-  const animationContainer = document.querySelector('.animation-container');
-
-  wrap.classList.add('hidden');
-  loaderContainer.classList.add('hidden');
-  animationContainer.classList.add('hidden');
-};
-
-setTimeout(() => {
-  onLoadWrap();
-}, 2000);

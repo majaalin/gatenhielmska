@@ -11,8 +11,7 @@
     left: 0;
     top: 0;
     bottom: 0;
-    background: #fff;
-    transition: all 1s;
+    pointer-events: none;
 
     .loader-container {
       width: 100%;
@@ -90,6 +89,10 @@
         }
       }
     }
+}
+
+.trans{
+      transition: all 1s;
 }
 
 .hidden {
