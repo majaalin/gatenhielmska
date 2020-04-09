@@ -5,7 +5,10 @@
 <section class="home">
     <div class="loader-wrap">
         <div class="loader-container">
-            <div class="animation-container"></div>
+            <img class="loader-img" src="<?php bloginfo('template_directory') ?>/assets/images/Gathenhielmska_huset.jpg" alt="img" />
+            <div class="animation-container">
+                <img class="loader-img" src="<?php bloginfo('template_directory') ?>/assets/images/gatenhielmska-loader-logo.png" alt="img" />
+            </div>
         </div>
     </div>
     <div class="home-wrapper">
