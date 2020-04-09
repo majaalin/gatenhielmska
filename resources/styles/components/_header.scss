@@ -236,6 +236,7 @@ a:focus + .sub-menu, a:hover + .sub-menu{
                     display: flex;
                     flex-direction: column;
                     border-top: 1px solid #2E3742;
+                    font-weight: 300;
                     
                     a:nth-last-child(2) {
                         display: flex;
@@ -263,7 +264,7 @@ a:focus + .sub-menu, a:hover + .sub-menu{
                 a {
                     font-family: Roboto;
                     font-style: normal;
-                    font-weight: normal;
+                    font-weight: 300;
                     font-size: 16px;
                     line-height: 150%;
                     color: #FFFFFF;

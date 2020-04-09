@@ -5,7 +5,7 @@
 <?php $news = get_posts(['post_type' => 'news']); ?>
 
 <section class="news">
-    <h2>Artiklar, Blogg, Nyheter</h2>
+<div class="bg-img-blog"><img src="<?php bloginfo('template_directory') ?>/assets/images/clown.png" alt=""><h2>Artiklar, Blogg, Nyheter</h2></div>
 <?php if (count($news)): ?>
             <ul class="news-wrapper">
                 <?php foreach ($news as $post): setup_postdata($post);?>

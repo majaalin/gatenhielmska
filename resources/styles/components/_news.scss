@@ -1,14 +1,33 @@
+section {
+  padding-top: 0;
+}
+
 .news {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  z-index: 1;
 
-  h1 {
-    margin-top: 0;
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 90px;
+  .bg-img-blog {
+    width: 100vw;
+    display: absolute;
+    left: 0;
+    z-index: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100vw;
+      height: auto;
+    }
+
+    h2 {
+      position: absolute;
+      margin-top: -20px;
+    }
   }
 
   .news-wrapper {
@@ -16,15 +35,17 @@
 
     .news-container {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: flex-start;
       padding: 0;
-      margin: 20px 0;
+      margin: 40px 0;
+      height: auto;
       background-color: $color-dark01;
 
       .news-img {
-        width: 201px;
-        height: 145px;
+        width: 174px;
+        max-height: 145px;
+        height: auto;
         object-fit: cover;
         margin-right: 28px
       }
@@ -33,9 +54,16 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-height: 145px;
         max-width: 597px;
+        height: auto;
+        min-height: 103px;
+        max-height: 145px;
+        padding: 16px 0;
 
+        h3 {
+          margin: 0;
+          margin-top: 8px;
+        }
 
         a {
           margin: 4px 0px;
@@ -50,7 +78,7 @@
         .date {
           font-family: Roboto; 
           font-style: normal;
-          font-weight: normal;
+          font-weight: 300;
           font-size: 16px;
           line-height: 120%;
           margin: 0;
