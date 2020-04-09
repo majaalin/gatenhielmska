@@ -3,6 +3,11 @@
 <?php $heroImage = get_field('hero_frontpage'); ?>
 <?php get_header(); ?>
 <section class="home">
+    <div class="loader-wrap">
+        <div class="loader-container">
+            <div class="animation-container"></div>
+        </div>
+    </div>
     <div class="home-wrapper">
         <!-- first view on landing page  -->
         <div class="first-view">
