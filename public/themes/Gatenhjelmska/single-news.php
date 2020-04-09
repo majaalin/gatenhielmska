@@ -24,24 +24,25 @@ if( !empty( $image ) ): ?>
       <?php endif; ?>
 
 <div class="related"> 
-<a class="more" href="">Alla ariklar</a>
+<a class="more" href="http://localhost:1337/news/">Alla ariklar</a>
 <h3>Relaterade artiklar</h3> 
 <div class="related-wrapper">
 <?php $news = get_posts(['post_type' => 'news']); ?>
 <?php if (count($news)): ?>
             <ul class="related-news-wrapper">
-              <?php for ($i=0; $i < 3; $i++) : ?>
+               <?php foreach(array_slice($news, 0, 3) as $new ) : setup_postdata($post)?>
                 <li class="related-news-container">
+                <a href="<?php echo $new->guid ?>"><span class="link-spanner"></span></a>
                     <?php 
 $image = get_field('image');
 if( !empty( $image ) ): ?>
     <img class="related-news-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 <?php endif; ?>
 <div class="text-container">
-<p class="date">Publicerad: <?php the_field('date'); ?></p>
-                    <h4><a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+<p class="date">Publicerad: <?php echo $new->post_date ?></p>
+                    <h4><a class="title" href="<?php the_permalink(); ?>"><?php echo $new->post_title ?></a></h4>
                     </div>
-              <?php endfor ?>
+              <?php endforeach ?>
 <?php endif; ?>
 </ul>
 </div>     

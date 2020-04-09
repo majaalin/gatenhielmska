@@ -11,6 +11,7 @@
 
 
     .history-wrapper {
+        padding: 200px 0;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -116,9 +117,8 @@
 @media screen and (max-width: 960px) {
     .history {
         display: flex;
-        background-size: 200%;
+        background-size: 300%;
         background-position: center;
-        width: 100vw;
         overflow-x: hidden;
 
         .history-wrapper {
