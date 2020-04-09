@@ -14,7 +14,7 @@ add_action('init', function () {
             'featured_image' => _('Featured Image'),
             'set_featured_image' => __('Set featured image'),
         ],
-				'supports' => [
+        'supports' => [
             'title',
             'editor',
             'thumbnail',
@@ -26,4 +26,3 @@ add_action('init', function () {
         'taxonomies' => array('image'),
     ]);
 });
-

@@ -5,3 +5,6 @@ plugins/*
 upgrade
 uploads
 wordpress
+!plugins/facebook-event-api/
+!plugins/instagram-display-api/
+plugins/facebook-event-api/defines.php

@@ -1,7 +1,5 @@
 <?php /* Template name: Home */ ?>
 
-
-
 <?php $heroImage = get_field('hero_frontpage'); ?>
 <?php get_header(); ?>
 <section class="home">
