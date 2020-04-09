@@ -27,13 +27,13 @@ function scrollFunction() {
   }
 }
 
-const hamburger = document.querySelector(".nav-icon");
+const hamburger = document.querySelector('.nav-icon');
 
-hamburger.addEventListener("click", open);
+hamburger.addEventListener('click', open);
 
 function open() {
-  const menu = document.querySelector(".mobile-menu ");
-  menu.classList.toggle("open");
+  const menu = document.querySelector('.mobile-menu ');
+  menu.classList.toggle('open');
   // document.body.classList.toggle("overflow-hidden");
 }
 
