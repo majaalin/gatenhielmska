@@ -2,13 +2,19 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    background: linear-gradient(0deg, rgba(32, 35, 39, 0.89), rgba(32, 35, 39, 0.89)), url(https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
+    background-repeat: repeat-y;
+    background-size: 150%;
+    background-position: center;
+    width: 100vw;
+    background-attachment: fixed;
+
 
     .history-wrapper {
         width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
-
         li {
             display: flex;
 
@@ -25,7 +31,6 @@
                     font-weight: bold;
                     font-size: 36px;
                     letter-spacing: 0.1em;
-                    color: #FFFFFF;
                     margin: 0 24px;
                 }
 
@@ -33,8 +38,8 @@
                     content: "\25CF";
                     display: inline-block;
                     position: absolute;
-                    padding-left: 22px;
-                    background-color:  $color-dark;
+                    padding-left: 21px;
+                    background-color: transparent;
                     font-size: 14px;
                     line-height: 18px;
                     margin-top: 5px;
@@ -57,23 +62,21 @@
                     display: flex;
                     align-items: center;
                     letter-spacing: 0.1em;
-                    color: #FFFFFF;
                     margin: 0 24px;
                 }
 
                 .content {
-                    font-family: Poppins;
+                    font-family: Roboto;
                     font-style: normal;
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 21px;
-                    color: #FFFFFF;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
                     margin: 20px;
                 }
             }
 
             div:first-of-type {
-                border-right: 3px solid #373737;
+                border-right: 2px solid #373737;
             }
         }
 
@@ -96,7 +99,7 @@
                 display: inline-block;
                 position: absolute;
                 padding: 0;
-                background-color: $color-dark;
+                background-color: transparent;
                 font-size: 14px;
                 line-height: 18px;
                 margin-top: 5px;
@@ -113,19 +116,25 @@
 @media screen and (max-width: 960px) {
     .history {
         display: flex;
+        background-size: 200%;
+        background-position: center;
+        width: 100vw;
+        overflow-x: hidden;
 
         .history-wrapper {
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
+            padding-inline-start: 30px;
     
             .even, .uneven-mobile  {
                 display: flex;
                 flex-direction: column;
-                border-left: 3px solid #373737;
+                border-left: 2px solid #373737;
                 padding-top: 20px;
                 padding-bottom: 80px;
-    
+                 
                 div {
                     width: 100vw;
                     padding-bottom: 0px;
@@ -147,7 +156,7 @@
                         display: inline-block;
                         position: absolute;
                         padding: 0;
-                        background-color: $color-dark;
+                        background-color: transparent;
                         font-size: 14px;
                         line-height: 18px;
                         margin-top: 5px;
@@ -157,7 +166,7 @@
                     .history-img {
                         width: calc(95% - 24px);
                         object-fit: scale-down;
-                        margin: 24px;
+                        margin: 24px 20px;
                     }
     
                     .title {
@@ -167,12 +176,11 @@
                     }
     
                     .content {
-                        font-weight: normal;
+                        font-weight: 300;
                         font-size: 16px;
                         line-height: 21px;
                         opacity: 0.85;
                         color: #EBEBEB;
-                        margin: 20px 24px;
                     }
                 }
     
