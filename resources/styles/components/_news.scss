@@ -33,6 +33,12 @@ section {
   .news-wrapper {
     padding-bottom: 100px;
 
+    .news-container:hover {
+      transform: scale(1.02);
+      opacity: 1;
+      cursor: pointer;
+    }
+
     .news-container {
       display: flex;
       align-items: center;
@@ -41,6 +47,9 @@ section {
       margin: 40px 0;
       height: auto;
       background-color: $color-dark01;
+      border: 1px solid #2E3742;
+      transition: all ease-in 0.2s;
+      opacity: 0.9;
 
       .news-img {
         width: 174px;
@@ -71,10 +80,6 @@ section {
           color: #EBEBEB;
         }
 
-        a:hover {
-          text-decoration: underline;
-        }
-
         .date {
           font-family: Roboto; 
           font-style: normal;
@@ -102,6 +107,27 @@ section {
   @media screen and (max-width: 960px) {
 
     .news {
+
+      .bg-img-blog {
+        width: 100vw;
+        height: 200px;
+        display: absolute;
+        left: 0;
+        margin-top: 100px;
+        z-index: 1; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        img {
+          display: none;
+        }
+    
+        h2 {
+          position: absolute;
+        }
+      }
     
       h1 {
         font-size: 40px;
@@ -132,11 +158,12 @@ section {
           align-items: flex-start;
           justify-content: center;
           width: calc(100vw -32px);
-          margin: 0 16px;
+          margin: 40px 16px;
           padding: 0;
     
           .news-img {
             min-height: 174px;
+            height: 70%;
             width: 100%;
             object-fit: cover;
             padding: 0;
@@ -147,27 +174,31 @@ section {
           .text-container {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            min-height: 158px;
             max-width: 675px;
-            margin: 8px 0;
+            margin: 0 8px;
+            padding: 8px 0;
     
-    
+            
+            h3 {
+              line-height: 130%;
+              margin-top: 0;
+              font-weight: 600;
+              font-size: 24px;
+            }
             a {
               margin: 4px 0px;
+              line-height: 130%;
               text-decoration: none;
             }
     
             .date {
               font-family: EB Garamond;
               font-size: 14px;
-              font-weight: 600;
+              font-weight: 500;
               line-height: 150%;
               margin: 0;
-            }
-            
-            .summary {
-              margin: 4px 0 32px 0;
+              padding-bottom: 4px;
+              color: #AFAFAF;
             }
             }
           }
