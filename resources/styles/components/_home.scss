@@ -68,18 +68,18 @@
             h1 {
               margin: 0px;
               padding: 0px;
-              font-size: 16px;
+              font-size: 12px;
               font-style: normal;
               font-weight: 600;
-              line-height: 130%;
+              line-height: 150%;
             }
             p {
               text-align: center;
-              margin: -12px 0px 0px 0px;
+              margin: -30px 0px 0px 0px;
               padding: 0px;
-              width: 550px;
+              width: 330px;
               line-height: 130%;
-              font-size: $h1-medium;
+              font-size: 24px;
               font-style: normal;
               font-weight: bold;
             }
@@ -87,7 +87,7 @@
             a {
               text-decoration: none;
               color: $color-light;
-              border-bottom: 2px solid currentColor;
+              border-bottom: 1px solid currentColor;
               display: inline-block;
               line-height: 0.90;
             }
@@ -102,15 +102,15 @@
               h3 {
                 margin: 0px;
                 padding: 0px;
-                font-size: 14px;
+                font-size: 12px;
                 font-style: normal;
-                font-weight: 600;
-                line-height: 130%;
+                font-weight: normal;
+                line-height: 150%;
               }
 
               .home__arrow-button {
-                width: 30px;
-                height: 30px;
+                width: 40px;
+                height: 40px;
                 margin-top: 15px;
 
                 a {
@@ -139,6 +139,10 @@
     }
 }
 
+.home__desktop{
+  visibility: hidden;
+}
+
 .hidden {
   visibility: hidden;
   opacity: 0;
@@ -147,5 +151,75 @@
 }
 
 @media screen and (min-width: 960px){
+  .home {
+
+      .home__wrapper {
+
+        .home__first-view {
+
+          .home__header {
+
+            .home__header-container {
+
+              h1 {
+                margin: 0px;
+                padding: 0px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 130%;
+              }
+              p {
+                text-align: center;
+                margin: -40px 0px 0px 0px;
+                padding: 0px;
+                width: 550px;
+                line-height: 130%;
+                font-size: $h1-medium;
+                font-style: normal;
+                font-weight: bold;
+              }
+
+              a {
+                text-decoration: none;
+                color: $color-light;
+                border-bottom: 2px solid currentColor;
+                display: inline-block;
+                line-height: 0.90;
+              }
+
+              .home__header-container-inner {
+
+                h3 {
+                  margin: 0px;
+                  padding: 0px;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 130%;
+                }
+
+              }
+
+            }
+          }
+        }
+
+
+        .home__secound-view{
+          .home__event-wrapper {
+
+          }
+        }
+      }
+  }
+
+  .home__desktop{
+    visibility: visible;
+  }
+
+  .home__mobile{
+    visibility: hidden;
+  }
 
 }

@@ -1,6 +1,7 @@
 <?php /* Template name: Home */ ?>
 
 <?php $heroImage = get_field('hero_frontpage'); ?>
+
 <?php get_header(); ?>
 <section class="home">
     <div class="home__Preloading-Screen"></div>
@@ -13,7 +14,8 @@
             <div class="home__header">
                 <div class="home__header-container"></div>
                 <div class="home__header-container">
-                    <h1><?php echo $heroImage['hero_title']; ?></h1>
+                    <h1 class="home__desktop"><?php echo $heroImage['hero_title']; ?></h1>
+                    <h1 class="home__mobile"><?php echo $heroImage['hero_title_copy']; ?></h1>
                     <h2><?php echo $heroImage['hero_text_and_links_']; ?></h2>
                 </div>
                 <div class="home__header-container">
