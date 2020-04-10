@@ -1,10 +1,10 @@
 import PreloadningScreen from './pageLoadWrap';
+import smoothScroll from './smoothScroll';
 
-// Preloadning Screen on landing page
+// Preloading Screen on landing page
 PreloadningScreen.templatePageLoad();
 
 const myStorage = window.sessionStorage;
-console.log(myStorage.getItem('hasCodeRunBefore'));
 
 if (myStorage.getItem('hasCodeRunBefore') === null) {
   setTimeout(() => {
@@ -15,6 +15,14 @@ if (myStorage.getItem('hasCodeRunBefore') === null) {
   PreloadningScreen.onLoadWrap2();
 }
 
+// Smooth Scroll
+const homeScrollButton = document.querySelector('.homeScrollButton');
+
+homeScrollButton.addEventListener('click', function() {
+  smoothScroll.smoothScroll('#anchor1', 1000);
+});
+
+// On scroll change header color
 function scrollFunction() {
   const subMenu = document.querySelectorAll('.sub-menu');
 

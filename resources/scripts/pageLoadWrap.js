@@ -1,5 +1,5 @@
 const templatePageLoad = () => {
-  const testTemplate = document.querySelector('.testTemplate');
+  const testTemplate = document.querySelector('.home__Preloading-Screen');
   const template = `
   <div class="loader-wrap">
     <div class="loader-container">
