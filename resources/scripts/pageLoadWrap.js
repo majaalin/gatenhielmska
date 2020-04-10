@@ -20,7 +20,6 @@ const onLoadWrap = () => {
   const logo = document.querySelector('.loader-logo');
   const headerImg = document.querySelector('.loader-img');
 
-  wrap.classList.add('trans');
   wrap.classList.add('hidden');
   loaderContainer.classList.add('hidden');
   animationContainer.classList.add('hidden');
@@ -28,18 +27,4 @@ const onLoadWrap = () => {
   headerImg.classList.add('hidden');
 };
 
-const onLoadWrap2 = () => {
-  const wrap = document.querySelector('.loader-wrap');
-  const loaderContainer = document.querySelector('.loader-container');
-  const animationContainer = document.querySelector('.animation-container');
-  const logo = document.querySelector('.loader-logo');
-  const headerImg = document.querySelector('.loader-img');
-
-  logo.classList.add('hidden');
-  headerImg.classList.add('hidden');
-  wrap.classList.add('hidden');
-  loaderContainer.classList.add('hidden');
-  animationContainer.classList.add('hidden');
-};
-
-export default { templatePageLoad, onLoadWrap, onLoadWrap2 };
+export default { templatePageLoad, onLoadWrap };

@@ -12,7 +12,7 @@ if (myStorage.getItem('hasCodeRunBefore') === null) {
     myStorage.setItem('hasCodeRunBefore', 'yes');
   }, 2000);
 } else {
-  PreloadningScreen.onLoadWrap2();
+  PreloadningScreen.onLoadWrap();
 }
 
 // Smooth Scroll
