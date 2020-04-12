@@ -2,25 +2,29 @@ import PreloadningScreen from './pageLoadWrap';
 import smoothScroll from './smoothScroll';
 
 // Preloading Screen on landing page
-PreloadningScreen.templatePageLoad();
+if (document.querySelector('.home__Preloading-Screen')) {
+  PreloadningScreen.templatePageLoad();
 
-const myStorage = window.sessionStorage;
+  const myStorage = window.sessionStorage;
 
-if (myStorage.getItem('hasCodeRunBefore') === null) {
-  setTimeout(() => {
+  if (myStorage.getItem('hasCodeRunBefore') === null) {
+    setTimeout(() => {
+      PreloadningScreen.onLoadWrap();
+      myStorage.setItem('hasCodeRunBefore', 'yes');
+    }, 2000);
+  } else {
     PreloadningScreen.onLoadWrap();
-    myStorage.setItem('hasCodeRunBefore', 'yes');
-  }, 2000);
-} else {
-  PreloadningScreen.onLoadWrap();
+  }
 }
 
 // Smooth Scroll
 const homeScrollButton = document.querySelector('.homeScrollButton');
 
-homeScrollButton.addEventListener('click', function() {
-  smoothScroll.smoothScroll('#anchor1', 1000);
-});
+if (homeScrollButton) {
+  homeScrollButton.addEventListener('click', function() {
+    smoothScroll.smoothScroll('#anchor1', 1000);
+  });
+}
 
 // On scroll change header color
 function scrollFunction() {
@@ -61,3 +65,9 @@ hamburger.addEventListener('click', open);
 //     menu.classList.toggle("sub-menu-open");
 //   });
 //   console.log(mobilMenu);
+
+fetch('wp-json/wl/v1/instagram')
+  .then(res => res.json())
+  .then(data => {
+    console.log(data);
+  });

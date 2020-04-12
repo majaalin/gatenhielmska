@@ -1,5 +1,5 @@
 const templatePageLoad = () => {
-  const testTemplate = document.querySelector('.home__Preloading-Screen');
+  const divContainer = document.querySelector('.home__Preloading-Screen');
   const template = `
   <div class="loader-wrap">
     <div class="loader-container">
@@ -10,7 +10,7 @@ const templatePageLoad = () => {
     </div>
   </div>
   `;
-  testTemplate.innerHTML = template;
+  divContainer.innerHTML = template;
 };
 
 const onLoadWrap = () => {
