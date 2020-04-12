@@ -1,0 +1,138 @@
+.event-query {
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100vw;
+
+    .background-img {
+        background: linear-gradient(0deg, rgba(32, 35, 39, 1), rgba(32, 35, 39, ));
+        position: fixed;
+        z-index: -1;
+        top: 0;
+    }
+
+    .contact-form {
+        
+        h1 {
+            font-family: EB Garamond;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 150%;
+            color: #D8D8D8;
+            text-align: left;
+            margin-bottom: 12px;
+            padding: 0;
+        }
+
+        p {
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 50px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #D8D8D8;
+            max-width: 480px;
+        }
+
+        form {
+
+            input {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #EBEBEB;
+                color: #A3A3A3;
+                font-weight: 400;
+                margin-top: 16px;
+            }
+
+            textarea {
+                background: rgba(235, 235, 235, 0.1);
+                border: 1px solid #EBEBEB;
+                border-radius: 8px;
+                width: 520px;
+                height: 96px;
+            }
+
+
+            p {
+                margin: 0;
+                margin-top: 24px;
+                font-weight: 400;
+            }
+            .wpcf7-radio {
+
+
+            .wpcf7-list-item {
+
+                input[type="radio"] {
+                }
+            }
+        }
+    }
+
+        .wpcf7-submit {
+            background: #EBEBEB;
+            border-radius: 20px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 150%;
+            color: #1E1E1E;
+            width: 202px;
+            height: 40px;
+            border: none;
+            margin-bottom: 92px;
+        }
+
+        .wpcf7-submit:hover {
+            color: #EBEBEB;
+            background-color: #1E1E1E;
+        }
+    }
+
+    .contact {
+
+        margin-top: 100px;
+
+        h2 {
+            font-family: EB Garamond;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 150%;
+            color: #D8D8D8;
+            text-align: left;
+        }
+
+        .socialmedia {
+            margin-left: -36px;
+            img {
+                margin: 50px 36px;
+            }
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+        p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            color: #D8D8D8;
+            padding: 0;
+            margin: 20px 0;
+            margin-left: 24px;
+        }
+    }
+
+    }
+}
