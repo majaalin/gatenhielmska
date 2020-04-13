@@ -27,9 +27,9 @@
   </ul>
   <ul class="socials">
     <h4>Socials</h4>
-    <a href=""><img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt=""></a>
-    <a href=""><img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt=""></a>
-    <a href=""><img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt=""></a>
+    <a href=""><img src="<?php bloginfo('template_directory') ?>/assets/images/facebook-footer.png" alt=""></a>
+    <a href=""><img src="<?php bloginfo('template_directory') ?>/assets/images/youtube-footer.png" alt=""></a>
+    <a href=""><img src="<?php bloginfo('template_directory') ?>/assets/images/v-footer.png" alt=""></a>
   </ul>
   <ul class="newsletter">
   <h4>Newsletter</h4>

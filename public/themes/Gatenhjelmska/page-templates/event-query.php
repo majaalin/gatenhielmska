@@ -27,7 +27,7 @@
                     <p><?php the_field('phone'); ?></p>
                     </div>
                     <div class="wrapper socialmedia">
-                    <img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt="">
+                    <img src="<?php bloginfo('template_directory') ?>/assets/images/instagram.png" alt="">
                     <img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt="">
                     <img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt="">
                     </div>
