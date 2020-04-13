@@ -3,7 +3,9 @@ import smoothScroll from "./smoothScroll";
 // Preloading Screen on landing page
 if (document.querySelector(".home__Preloading-Screen")) {
   PreloadningScreen.templatePageLoad();
+
   const myStorage = window.sessionStorage;
+
   if (myStorage.getItem("hasCodeRunBefore") === null) {
     setTimeout(() => {
       PreloadningScreen.onLoadWrap();
@@ -15,11 +17,13 @@ if (document.querySelector(".home__Preloading-Screen")) {
 }
 // Smooth Scroll
 const homeScrollButton = document.querySelector(".homeScrollButton");
+
 if (homeScrollButton) {
   homeScrollButton.addEventListener("click", function() {
     smoothScroll.smoothScroll("#anchor1", 1000);
   });
 }
+
 // On scroll change header color
 function scrollFunction() {
   const subMenu = document.querySelectorAll(".sub-menu");
@@ -53,27 +57,9 @@ hamburger.addEventListener("click", open);
 //     menu.classList.toggle("sub-menu-open");
 //   });
 //   console.log(mobilMenu);
-if (document.querySelector(".gallery")) {
-  const printOutGallery = data => {
-    data.data.forEach(media => {
-      const divContainer = document.querySelector(".gallery-container");
-      if (
-        media.media_type === "IMAGE" ||
-        media.media_type === "CAROUSEL_ALBUM"
-      ) {
-        const mediaUrlTemplate = `<img src="${media.media_url}" />`;
-        const template = `<div class="gallery-inner-container">${mediaUrlTemplate}</div>`;
-        divContainer.innerHTML += template;
-      } else {
-        const mediaUrlTemplate = `<video controls><source src="${media.media_url}"></video>`;
-        const template = `<div class="gallery-inner-container">${mediaUrlTemplate}</div>`;
-        divContainer.innerHTML += template;
-      }
-    });
-  };
-  fetch("/wp-json/wl/v1/instagram")
-    .then(res => res.json())
-    .then(data => {
-      printOutGallery(data);
-    });
-}
+
+fetch("wp-json/wl/v1/instagram")
+  .then(res => res.json())
+  .then(data => {
+    console.log(data);
+  });
