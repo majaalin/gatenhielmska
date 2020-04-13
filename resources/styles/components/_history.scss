@@ -69,7 +69,8 @@
                 .content {
                     font-family: Roboto;
                     font-style: normal;
-                    font-weight: 300;
+                    font-weight: 400;
+                    color: rgba(255, 255, 255, 0.8);
                     font-size: 16px;
                     line-height: 24px;
                     margin: 20px;
@@ -127,6 +128,8 @@
             align-items: center;
             width: 100%;
             padding-inline-start: 30px;
+            padding-top: 100px;
+            padding-bottom: 40px;
     
             .even, .uneven-mobile  {
                 display: flex;
@@ -176,7 +179,7 @@
                     }
     
                     .content {
-                        font-weight: 300;
+                        font-weight: 400;
                         font-size: 16px;
                         line-height: 21px;
                         opacity: 0.85;

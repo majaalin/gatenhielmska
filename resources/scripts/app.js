@@ -30,6 +30,8 @@ function scrollFunction() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     document.querySelector("header").style.backgroundColor =
       "rgba(13, 17, 23, 0.97)";
+    document.querySelector(".mobile").style.backgroundColor =
+      "rgba(13, 17, 23, 0.97)";
     subMenu.forEach(element => {
       element.style.backgroundColor = "rgba(13, 17, 23, 0.97)";
     });

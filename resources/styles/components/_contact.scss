@@ -11,8 +11,11 @@
     background-attachment: fixed;
 
     .contact-wrapper {
-        width: calc(100vw - 338px);
-        padding: 0 169px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 1328px;
+        padding: 0 217px;
 
 
     h1 {
@@ -28,11 +31,10 @@
     p {
         font-family: Roboto;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 16px;
         line-height: 150%;
         color: #F5F5F5;
-        max-width: 764px;
         padding: 0;
         margin: 0;
     }
@@ -77,7 +79,7 @@
         flex-direction: column;
         align-items: center;
         width: calc(100vw - 34px);
-        padding: 130px 17px 177px 17px;
+        padding: 112px 17px 72px 17px;
         background-position: 100% 0%;
         color:#EBEBEB;
     

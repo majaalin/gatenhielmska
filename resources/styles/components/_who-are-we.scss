@@ -18,8 +18,8 @@
     }
 
     div {
-        margin: 136px 507px 136px 169px;
-        min-width: 500px;
+        max-width: 1328px;
+        padding: 136px 217px;
 
     h1 {
         font-family: EB Garamond;
@@ -42,10 +42,14 @@
         margin-bottom: 8px;
     }
 
+    p:first-of-type {
+        margin-bottom: 64px;
+    }
+
     p {
         font-family: Roboto;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 16px;
         line-height: 150%;
         color: #EBEBEB;
@@ -63,12 +67,18 @@
         max-width: 100vw;
     
         div {
-            margin: 104px 95px 104px 16px;
+            padding: 104px 16px;
+            padding-right: 80px;
+            padding-bottom: 40px;
             max-width: 100vw;
             min-width: 0;
     
         h1 {
             font-size: 24px;
+        }
+
+        p:first-of-type {
+            margin-bottom: 40px;
         }
     }
     }
