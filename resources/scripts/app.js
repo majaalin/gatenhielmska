@@ -45,12 +45,17 @@ function scrollFunction() {
 window.onscroll = function() {
   scrollFunction();
 };
+
 const hamburger = document.querySelector(".nav-icon");
+const cross = document.querySelector(".cross");
 function open() {
   const menu = document.querySelector(".mobile-menu ");
   menu.classList.toggle("open");
+  cross.classList.toggle("cross-visible");
+  hamburger.classList.toggle("nav-icon-visible");
 }
 hamburger.addEventListener("click", open);
+cross.addEventListener("click", open);
 
 fetch("wp-json/wl/v1/instagram")
   .then(res => res.json())

@@ -22,6 +22,9 @@
     <header class="mobile">
         <img class="logo" src="<?php echo $image[0]; ?>" alt="">
         <div class="nav-icon"></div>
+        <div class="cross">
+        <img src="<?php bloginfo('template_directory') ?>/assets/images/cross.png" alt="">
+        </div>
         <div class="mobile-menu">
         <?php wp_nav_menu(['theme_location' => 'navigation']); ?>
         </div>

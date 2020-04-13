@@ -211,6 +211,20 @@ a:focus + .sub-menu, a:hover + .sub-menu{
             cursor: pointer;
           }
 
+          .nav-icon-visible {
+              display: none;
+          }
+
+          .cross {
+              margin-top: 10px;
+              display: none;
+          }
+
+          .cross-visible {
+            margin-top: 10px;
+            display: block;
+        }
+
           .mobile-menu {
             display: none;
             height: 0%;
