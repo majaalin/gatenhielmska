@@ -2,7 +2,7 @@
   <section class="footer"> 
   <div class="wrapper">
   <ul>
-    <li>Länkar lista</li>
+    <h4>Länkar lista</h4>
     <li><a href="">veniam nisi</a></li>
     <li><a href="">deserunt sint</a></li>
     <li><a href="">ad eiusmod</a></li>
@@ -10,7 +10,7 @@
     <li><a href="">consequat officia</a></li>
   </ul>
   <ul>
-    <li>Länkar lista</li>
+    <h4>Länkar lista</h4>
     <li><a href="">veniam nisi</a></li>
     <li><a href="">deserunt sint</a></li>
     <li><a href="">ad eiusmod</a></li>
@@ -18,13 +18,29 @@
     <li><a href="">consequat officia</a></li>
   </ul>
   <ul>
-    <li>Länkar lista</li>
+    <h4>Länkar lista</h4>
     <li><a href="">veniam nisi</a></li>
     <li><a href="">deserunt sint</a></li>
     <li><a href="">ad eiusmod</a></li>
     <li><a href="">pariatur id</a></li>
     <li><a href="">consequat officia</a></li>
   </ul>
+  <ul class="socials">
+    <h4>Socials</h4>
+    <a href=""><img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt=""></a>
+    <a href=""><img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt=""></a>
+    <a href=""><img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt=""></a>
+  </ul>
+  <ul class="newsletter">
+  <h4>Newsletter</h4>
+  <li><input type="text"></li>
+  <li><button>Signup</button></li>
+  </ul>
+  </div>
+  <div class="sponsors">
+  <img src="<?php bloginfo('template_directory') ?>/assets/images/studieframjandet.png" alt="">
+  <img src="<?php bloginfo('template_directory') ?>/assets/images/goteborg.png" alt="">
+  <img src="<?php bloginfo('template_directory') ?>/assets/images/higab.png" alt="">
   </div>
   </section>
 </body>

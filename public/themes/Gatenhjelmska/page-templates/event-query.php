@@ -1,9 +1,9 @@
 <?php /* Template name: Events Query */ ?>
 
 <?php get_header(); ?>
-<section class="event-query">
-<img class="background-img" src="<?php bloginfo('template_directory') ?>/assets/images/event-query.png" alt="">
-        <div class="contact-form">
+<section class="event-query" style="background: linear-gradient(0deg, rgba(25, 29, 35, 0.8), rgba(25, 29, 35, 0.8)), url(<?php bloginfo('template_directory') ?>/assets/images/event-query.png); background-attachment: fixed;">
+<div class="event-query-wrapper">    
+<div class="contact-form">
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
                     <h1><?php the_field('h1'); ?></h1>
@@ -32,5 +32,6 @@
                     <img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt="">
                     </div>
                 </div>
+                </div>    
         </section>
 <?php get_footer(); ?>
