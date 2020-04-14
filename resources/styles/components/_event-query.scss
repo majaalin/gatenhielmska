@@ -12,6 +12,21 @@
         width: 100vw;
     }
 
+    .fm-message.fm-notice-success {
+        background-color: #D8D8D8 !important;
+        color: $color-dark;
+        font-family: Roboto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .fm-not-filled{
+        color:inherit !important;
+     }
+
+
     .contact-form {
         padding-top: 136px;
         
