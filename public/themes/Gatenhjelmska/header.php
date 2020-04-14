@@ -11,21 +11,21 @@
 <body <?php body_class(); ?>>
     <header class="desktop">
         <div class="wrapper">
-        <?php
-        $custom_logo_id = get_theme_mod('custom_logo');
-        $image = wp_get_attachment_image_src($custom_logo_id, 'full');
-        ?>
-        <img class="logo" src="<?php echo $image[0]; ?>" alt="">
-        <?php wp_nav_menu(['theme_location' => 'navigation']); ?>
+            <?php
+                $custom_logo_id = get_theme_mod('custom_logo');
+                $image = wp_get_attachment_image_src($custom_logo_id, 'full');
+            ?>
+            <img class="logo" src="<?php echo $image[0]; ?>" alt="">
+            <?php wp_nav_menu(['theme_location' => 'navigation']); ?>
         </div>
     </header>
     <header class="mobile">
         <img class="logo" src="<?php echo $image[0]; ?>" alt="">
-        <div class="nav-icon"></div>
-        <div class="cross">
-        <img src="<?php bloginfo('template_directory') ?>/assets/images/cross.png" alt="">
-        </div>
-        <div class="mobile-menu">
-        <?php wp_nav_menu(['theme_location' => 'navigation']); ?>
-        </div>
+            <div class="nav-icon"></div>
+                <div class="cross">
+                    <img src="<?php bloginfo('template_directory') ?>/assets/images/cross.png" alt="">
+                </div>
+                <div class="mobile-menu">
+                    <?php wp_nav_menu(['theme_location' => 'navigation']); ?>
+            </div>
     </header>
