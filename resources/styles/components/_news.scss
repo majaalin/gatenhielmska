@@ -18,7 +18,6 @@ section {
     justify-content: center;
     align-items: center;
 
-
     img {
       width: 100vw;
       height: auto;
@@ -46,7 +45,7 @@ section {
       margin: 40px 0;
       height: auto;
       background-color: $color-dark01;
-      border: 1px solid #2E3742;
+      border: 1px solid $color-dark09;
       transition: all ease-in 0.2s;
       opacity: 0.9;
 
@@ -68,36 +67,36 @@ section {
         max-height: 145px;
         padding: 16px 0;
 
-        h3 {
-          margin: 0;
-          margin-top: 8px;
-        }
+          h3 {
+            margin: 0;
+            margin-top: 8px;
+          }
 
-        a {
-          margin: 4px 0px;
-          text-decoration: none;
-          color: #EBEBEB;
-        }
+          a {
+            margin: 4px 0px;
+            text-decoration: none;
+            color: #EBEBEB;
+          }
 
-        .date {
-          font-family: Roboto; 
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 120%;
-          margin: 0;
-          color: #EBEBEB;
-        }
-        
-        .summary {
-          font-family: Poppins;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 16px;
-          line-height: 150%;
-          letter-spacing: -0.02em;
-          color: #EBEBEB;
-        }
+          .date {
+            font-family: Roboto; 
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            margin: 0;
+            color: #EBEBEB;
+          }
+          
+          .summary {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: -0.02em;
+            color: #EBEBEB;
+          }
         }
       }
     }
@@ -138,15 +137,19 @@ section {
       }
     
       ul :first-child {
+
         a:first-of-type{
           font-size: 24px !important;
         }
+
       }
     
       ul :nth-of-type(2) {
+
         a:first-of-type{
           font-size: 24px !important;
         }
+
       }
     
       .news-wrapper {
@@ -180,13 +183,13 @@ section {
             margin: 0 8px;
             padding: 8px 0;
     
-            
             h3 {
               line-height: 130%;
               margin-top: 0;
               font-weight: 600;
               font-size: 24px;
             }
+
             a {
               margin: 4px 0px;
               line-height: 130%;
@@ -202,9 +205,8 @@ section {
               padding-bottom: 4px;
               color: #AFAFAF;
             }
-            }
           }
         }
       }
-
+    }
   }

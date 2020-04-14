@@ -147,43 +147,43 @@
                 color: #1E1E1E;
                 margin-bottom: 92px;
             }
-}
+        }
 
-.contact {
-margin-top: 296px;
-font-family: Roboto;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-color: #D8D8D8;
-
-
-    h2 {
-        text-align: left;
+    .contact {
+        margin-top: 296px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
         color: #D8D8D8;
-    }
 
 
-    .wrapper {
-        display: flex;
-        align-items: center;
-
-        img {
-            margin-right: 24px;
+        h2 {
+            text-align: left;
+            color: #D8D8D8;
         }
-    }
 
-    .socialmedia {
-        margin-top: 60px;
-        margin-left: -35px;
 
-        img {
-            margin: 0 35px;
+        .wrapper {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 24px;
+            }
         }
-    }
 
-}
+        .socialmedia {
+            margin-top: 60px;
+            margin-left: -35px;
+
+            img {
+                margin: 0 35px;
+            }
+        }
+
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -259,48 +259,47 @@ color: #D8D8D8;
                          margin-bottom: 20px;
 
                      }
-                }
+            }
     
-                #wdform_4_element6, #wdform_5_element6, #wdform_10_element6 {
-                    width: calc(100vw -32px) !important;
-                }
+            #wdform_4_element6, #wdform_5_element6, #wdform_10_element6 {
+                width: calc(100vw -32px) !important;
+            }
 
-                .wdform_column {
-                    display: block !important;
-                }
+            .wdform_column {
+                display: block !important;
+            }
     
-                #wdform_8_element6 {
-                    margin-bottom: 30px;
-                    width: calc(100vw - 32px);
-                    height: 136px;
-                    margin: 20px 0;
-                }
+            #wdform_8_element6 {
+                margin-bottom: 30px;
+                width: calc(100vw - 32px);
+                height: 136px;
+                margin: 20px 0;
+            }
     
-                .button-submit {
-                    border-radius: 28px;
-                    width: calc(100vw - 32px);
-                    height: 56px;
-                    margin-top: 10px;
-                    margin-bottom: 0px;
-                }
-    }
+            .button-submit {
+                border-radius: 28px;
+                width: calc(100vw - 32px);
+                height: 56px;
+                margin-top: 10px;
+                margin-bottom: 0px;
+            }
+        }
     
     .contact {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
-    color: #D8D8D8;
-    margin: 0 16px;
-    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #D8D8D8;
+        margin: 0 16px;
+        
         h2 {
             text-align: left;
             color: #D8D8D8;
             margin-bottom: 20px;
             margin-top: 30px;
         }
-    
     
         .wrapper {
             display: flex;
@@ -327,5 +326,5 @@ color: #D8D8D8;
         }
     
     }
-    }
+}
 }

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:  #191D23;
+    background-color: $color-dark01;
 
     .house {
         display: flex;
@@ -23,7 +23,6 @@
             h2 {
                 margin-bottom: 16px;
             }
-            
 
             p {
                 font-family: Roboto;
@@ -47,6 +46,7 @@
         }
 
     }
+
     .operations-div {
         display: flex;
         flex-direction: column;
@@ -78,7 +78,6 @@
                 color: #EBEBEB;
                 margin: 0;
                 margin-bottom: 56px;
-
             }
         }
     }
@@ -97,15 +96,13 @@
             max-width: 1328px;
             padding: 0 217px;
 
-
         h2 {
             padding: 24px 0;
             text-align: left;
-
         }
 
     }
-    }
+}
 }
 
 @media screen and (max-width: 960px) {
@@ -171,7 +168,6 @@
                 padding: 20px 16px;
                 margin: 0;
                 max-width: auto;
-    
             }
         }
     }
