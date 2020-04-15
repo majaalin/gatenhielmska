@@ -123,7 +123,8 @@ section {
         }
     
         h2 {
-          position: absolute;
+          position: relative;
+          padding: 0 16px;
           margin: 0;
           margin-right: 16px;
         }
@@ -165,6 +166,7 @@ section {
           width: calc(100vw -32px);
           margin: 40px 16px;
           padding: 0;
+          min-width: 0;
     
           .news-img {
             min-height: 174px;
@@ -182,6 +184,7 @@ section {
             max-width: 675px;
             margin: 0 8px;
             padding: 8px 0;
+            min-height: 0;
     
             h3 {
               line-height: 130%;
