@@ -1,6 +1,5 @@
 import PreloadningScreen from './pageLoadWrap';
 import smoothScroll from './smoothScroll';
-
 // Preloading Screen on landing page
 if (document.querySelector('.home__Preloading-Screen')) {
   PreloadningScreen.templatePageLoad();
@@ -16,7 +15,6 @@ if (document.querySelector('.home__Preloading-Screen')) {
     PreloadningScreen.onLoadWrap();
   }
 }
-
 // Smooth Scroll
 const homeScrollButton = document.querySelector('.homeScrollButton');
 
@@ -29,9 +27,10 @@ if (homeScrollButton) {
 // On scroll change header color
 function scrollFunction() {
   const subMenu = document.querySelectorAll('.sub-menu');
-
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     document.querySelector('header').style.backgroundColor =
+      'rgba(13, 17, 23, 0.97)';
+    document.querySelector('.mobile').style.backgroundColor =
       'rgba(13, 17, 23, 0.97)';
     subMenu.forEach(element => {
       element.style.backgroundColor = 'rgba(13, 17, 23, 0.97)';
@@ -43,18 +42,20 @@ function scrollFunction() {
     });
   }
 }
-
 window.onscroll = function() {
   scrollFunction();
 };
 
 const hamburger = document.querySelector('.nav-icon');
-
+const cross = document.querySelector('.cross');
 function open() {
   const menu = document.querySelector('.mobile-menu ');
   menu.classList.toggle('open');
-  // document.body.classList.toggle("overflow-hidden");
+  cross.classList.toggle('cross-visible');
+  hamburger.classList.toggle('nav-icon-visible');
 }
+hamburger.addEventListener('click', open);
+cross.addEventListener('click', open);
 
 hamburger.addEventListener('click', open);
 // function openMenu() {
