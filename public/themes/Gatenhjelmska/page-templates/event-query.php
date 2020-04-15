@@ -15,21 +15,21 @@
         <div class="contact"> 
             <h2><?php the_field('sub-heading'); ?></h2>
             <div class="wrapper">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/address.png" alt="">
+                <img src="<?php bloginfo('template_directory') ?>/assets/images/address.png" alt="adress">
                 <p><?php the_field('address'); ?></p>
             </div>
             <div class="wrapper">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/email.png" alt="">
+                <img src="<?php bloginfo('template_directory') ?>/assets/images/email.png" alt="email">
                 <p><?php the_field('email'); ?></p>
             </div>
             <div class="wrapper">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/phone.png" alt="">
+                <img src="<?php bloginfo('template_directory') ?>/assets/images/phone.png" alt="phone">
                 <p><?php the_field('number'); ?></p>
             </div>
             <div class="wrapper socialmedia">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/instagram.png" alt="">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt="">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt="">
+                <img src="<?php bloginfo('template_directory') ?>/assets/images/instagram.png" alt="instagram">
+                <img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt="facebook">
+                <img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt="facebook">
             </div>
         </div>
     </div>    

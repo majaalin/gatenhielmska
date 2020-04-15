@@ -16,15 +16,15 @@
                 $image = wp_get_attachment_image_src($custom_logo_id, 'full');
             ?>
 
-<a class="logo" href="http://localhost:1337"><img src="<?php echo $image[0]; ?>" alt=""></a>
+<a class="logo" href="http://localhost:1337"><img src="<?php echo $image[0]; ?>" alt="logo"></a>
             <?php wp_nav_menu(['theme_location' => 'navigation']); ?>
         </div>
     </header>
     <header class="mobile">
-        <img class="logo" src="<?php echo $image[0]; ?>" alt="">
+        <img class="logo" src="<?php echo $image[0]; ?>" alt="logo">
             <div class="nav-icon"></div>
                 <div class="cross">
-                    <img src="<?php bloginfo('template_directory') ?>/assets/images/cross.png" alt="">
+                    <img src="<?php bloginfo('template_directory') ?>/assets/images/cross.png" alt="cross">
                 </div>
                 <div class="mobile-menu">
                     <?php wp_nav_menu(['theme_location' => 'navigation']); ?>
