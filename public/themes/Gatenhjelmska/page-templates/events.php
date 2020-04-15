@@ -2,15 +2,13 @@
 
 <?php get_header(); ?>
 <section class="events">
-    <div>
-        <div>
-            <?php if (have_posts()) : ?>
-                <?php while (have_posts()) : the_post(); ?>
-                    <h1><?php the_title(); ?></h1>
-                    <?php the_content(); ?>
-                <?php endwhile; ?>
-            <?php endif; ?>
-        </div><!-- /col -->
-    </div><!-- /row -->
+    <div class="events__wrapper">
+        <div class="modal-outer">
+            <div class="modal-inner"></div>
+        </div>
+        <div class="events__secound-view">
+            <div class="event-container"></div>
+        </div>
+    </div>
 </section>
 <?php get_footer(); ?>

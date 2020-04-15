@@ -23,14 +23,16 @@
                         <h3>KOMMANDE EVENT</h3>
                         <div class="home__arrow-button">
                             <a class="homeScrollButton" href="#anchor1"><img src="<?php bloginfo('template_directory') ?>/assets/images/down-arrow-white.png" /></a>
+                            <div id="anchor1"></div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="home__secound-view">
-            <div id="anchor1" class="home__event-wrapper">
-
+        <div class="events__wrapper">
+            <div class="events__secound-view">
+                <div class="event-container"></div>
             </div>
         </div>
     </div>

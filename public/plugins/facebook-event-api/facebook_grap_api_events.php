@@ -44,6 +44,7 @@ class Facebook_api
         $graphNode = $response->getGraphObject();
         $data = json_decode($graphNode, true);
 
+
         return $data;
     }
 }

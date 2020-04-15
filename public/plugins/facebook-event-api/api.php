@@ -12,7 +12,7 @@ function wl_facebook()
     // require get_theme_file_path('includes/app/facebookAPI/facebook_grap_api_events.php');
     require_once(plugin_dir_path(__DIR__) . 'facebook-event-api/facebook_grap_api_events.php');
 
-    $accessToken = 'EAACZCL1SXOZBwBADZCBhw3RwoZBVCgrDMLWaIavy6X7wSLKZCI6sXE8azjNZCdPBg7zEDA9GSvszMxWamwt21TpkrVZBvP0jxOEQPVjlGSnT2MNjjbYvGjtDR4DHGOnZAGkqk8fyogKuuojg7Fq0haMZCwhNxZA9b5cce7t67MpNZAQBBbNWlFb1B2WZBhkXbSx6TKHgIWLEI1uirOdD374t8D8T';
+    $accessToken = 'EAACZCL1SXOZBwBABwhxOZBQZBuBRmFnVmPfxIQDfhomzZBoDvrNWuSZAJYIXPztodAOuaVX5oOl77kmpeHZBLWIj6hM8owZAr0VFKDPF54ij9wsxfQMWMhGqlSey3vuUw6mvsvD2zpVTcdpjT9sCfSONtZChMsZCOym1xa8rJy5dzCKckfejIZBHg6dxCQ52YAwZAgkXu7ugpwQqPLzA5HQvo2iG';
 
     $params = array(
         'access_token' => $accessToken
@@ -20,8 +20,9 @@ function wl_facebook()
 
     $fb = new Facebook_api($params);
     $data = $fb->_makeApiCall();
+    $dataReverse = array_reverse($data['events']);
 
-    return $data;
+    return $dataReverse;
 }
 
 add_action('rest_api_init', function () {
