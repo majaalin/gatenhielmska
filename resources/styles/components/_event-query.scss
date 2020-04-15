@@ -103,7 +103,7 @@
                 display: none;
             }
 
-            #wdform_4_element6, #wdform_5_element6, #wdform_6_element6, #wdform_7_element6, #wdform_10_element6 {
+            #wdform_4_element6, #wdform_5_element6, #wdform_6_element6, #wdform_7_element6, #wdform_10_element6, #wdform_9_element6 {
                      background-color: transparent;
                      border: none !important;
                      border-bottom: 1px solid #EBEBEB !important;
@@ -119,7 +119,7 @@
                  }
             }
 
-            #wdform_4_element6, #wdform_5_element6, #wdform_10_element6 {
+            #wdform_4_element6, #wdform_5_element6, #wdform_10_element6, #wdform_9_element6  {
                 width: 265px !important;
             }
 
@@ -198,18 +198,18 @@
             max-width: 100vw;
             width: 100vw;
         }
-    
+
         .contact-form {
             width: calc(100vw - 32px);
             padding: 0 16px;
             margin: 0;
             padding-top: 112px;
-            
+
             h1 {
                 margin-bottom: 8px;
                 width: 70%;
             }
-    
+
             p {
                 padding: 0;
                 margin-top: 0;
@@ -217,11 +217,11 @@
                 max-width: 480px;
                 width: 90%;
             }
-    
+
             .fm-form-container.fm-theme1 {
                 width: calc(100vw - 32px);
             }
-    
+
             .fm-form .wdform-field:not([type=type_hidden]) {
                 padding-right: 0;
                 padding: 0px;
@@ -230,37 +230,37 @@
             #wdform_4_element6, #wdform_5_element6, #wdform_10_element6 {
                 width: calc(100vw - 32px) !important;
             }
-    
+
             .wdform_column {
-    
+
                 label {
                     margin: 0;
                     padding: 0;
                 }
-    
+
                 .radio {
                     margin-left: -20px;
                     margin-top: 10px;
                     margin-bottom: 0;
-                    
+
                     .wd-flex {
                             margin: 10px 10px;
                             padding: 0;
                             flex-wrap: wrap;
-    
+
                             label {
                                 margin-top: 5px;
                             }
                     }
                 }
-    
+
                 #wdform_4_element6, #wdform_5_element6, #wdform_6_element6, #wdform_7_element6, #wdform_10_element6 {
                          width: calc(100vw - 32px);
                          margin-bottom: 20px;
 
                      }
             }
-    
+
             #wdform_4_element6, #wdform_5_element6, #wdform_10_element6 {
                 width: calc(100vw -32px) !important;
             }
@@ -268,14 +268,14 @@
             .wdform_column {
                 display: block !important;
             }
-    
+
             #wdform_8_element6 {
                 margin-bottom: 30px;
                 width: calc(100vw - 32px);
                 height: 136px;
                 margin: 20px 0;
             }
-    
+
             .button-submit {
                 border-radius: 28px;
                 width: calc(100vw - 32px);
@@ -284,7 +284,7 @@
                 margin-bottom: 0px;
             }
         }
-    
+
     .contact {
         font-family: Roboto;
         font-style: normal;
@@ -293,24 +293,24 @@
         line-height: 150%;
         color: #D8D8D8;
         margin: 0 16px;
-        
+
         h2 {
             text-align: left;
             color: #D8D8D8;
             margin-bottom: 20px;
             margin-top: 30px;
         }
-    
+
         .wrapper {
             display: flex;
             align-items: center;
             margin: 10px 0;
-    
+
             img {
                 margin-right: 16px;
             }
         }
-    
+
         .socialmedia {
             width: calc(100vw - 32px);
             display: flex;
@@ -319,12 +319,12 @@
             margin-top: 30px;
             margin-bottom: 48px;
             max-width: 200px;
-    
+
             img {
                 margin: 0 35px;
             }
         }
-    
+
     }
 }
 }
