@@ -30,6 +30,9 @@
                 </div>
             </div>
         </div>
+        <div class="modal-outer">
+            <div class="modal-inner"></div>
+        </div>
         <div class="events__wrapper">
             <div class="events__secound-view">
                 <div class="event-container"></div>
