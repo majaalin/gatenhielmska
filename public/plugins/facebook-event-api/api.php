@@ -12,7 +12,9 @@ function wl_facebook()
     // require get_theme_file_path('includes/app/facebookAPI/facebook_grap_api_events.php');
     require_once(plugin_dir_path(__DIR__) . 'facebook-event-api/facebook_grap_api_events.php');
 
-    $accessToken = 'EAACZCL1SXOZBwBABwhxOZBQZBuBRmFnVmPfxIQDfhomzZBoDvrNWuSZAJYIXPztodAOuaVX5oOl77kmpeHZBLWIj6hM8owZAr0VFKDPF54ij9wsxfQMWMhGqlSey3vuUw6mvsvD2zpVTcdpjT9sCfSONtZChMsZCOym1xa8rJy5dzCKckfejIZBHg6dxCQ52YAwZAgkXu7ugpwQqPLzA5HQvo2iG';
+    $accessToken = 'EAACZCL1SXOZBwBAK8zbS0IroOzIYZAp6QDWllSY4yoqi8sIy0X2CPYYUO8b81pUr8hPqvqEUCZA2g82S6xYZB5fjHaIZBFR9ss0oeh469a1LMuJmErCFcGGzipnNc6KLQ5GWacuxOEWmZClglIjivgw06BjSnlU7YJnWynwld0xnXdxnMqREt39PbqtSJJCccvv14e4EMMLpSCNm5OkXtrS
+
+    ';
 
     $params = array(
         'access_token' => $accessToken
