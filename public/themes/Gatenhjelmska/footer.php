@@ -2,7 +2,7 @@
   <section class="footer"> 
     <div class="wrapper">
       <ul>
-        <h4>Länkar lista</h4>
+        <h4>Länkar</h4>
         <li><a href="#">veniam nisi</a></li>
         <li><a href="#">deserunt sint</a></li>
         <li><a href="#">ad eiusmod</a></li>
@@ -10,7 +10,7 @@
         <li><a href="#">consequat officia</a></li>
       </ul>
       <ul>
-        <h4>Länkar lista</h4>
+        <h4>Länkar</h4>
         <li><a href="#">veniam nisi</a></li>
         <li><a href="#">deserunt sint</a></li>
         <li><a href="#">ad eiusmod</a></li>
@@ -18,7 +18,7 @@
         <li><a href="#">consequat officia</a></li>
       </ul>
       <ul>
-        <h4>Länkar lista</h4>
+        <h4>Länkar</h4>
         <li><a href="#">veniam nisi</a></li>
         <li><a href="#">deserunt sint</a></li>
         <li><a href="#">ad eiusmod</a></li>
@@ -32,9 +32,9 @@
         <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/images/v-footer.png" alt=""></a>
       </ul>
       <ul class="newsletter">
-        <h4>Newsletter</h4>
+        <h4>Nyhetsbrev</h4>
         <li><input type="text"></li>
-        <li><button>Signup</button></li>
+        <li><button>Anmäl dig</button></li>
       </ul>
       </div>
       <div class="sponsors">

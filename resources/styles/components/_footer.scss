@@ -77,6 +77,10 @@
                     line-height: 24px;
                     color: #619FFB;
                     margin-top: 0;
+
+                    &:hover {
+                        color: #70a8fb;
+                    }
                 }
 
                 input {
@@ -94,9 +98,9 @@
                 }
 
                 button {
-                    width: 82px;
+                    width: 100px;
                     height: 37px;
-                    background: #619FFB;
+                    background-color: #619FFB;
                     border-radius: 51px;
                     border: none;
                     font-family: Roboto;
@@ -105,6 +109,11 @@
                     font-size: 16px;
                     line-height: 130%;
                     color: #FFFFFF;
+                    transition: 0.3 ease;
+
+                    &:hover {
+                        background-color: #70a8fb;
+                    }
                 }
             }
         }
