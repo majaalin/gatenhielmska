@@ -1,4 +1,4 @@
-<?php /* Template name: Events Query */ ?>
+<?php /* Template name: Eventförfrågan */ ?>
 
 <?php get_header(); ?>
 <section class="event-query" style="background: linear-gradient(0deg, rgba(25, 29, 35, 0.8), rgba(25, 29, 35, 0.8)), url(<?php bloginfo('template_directory') ?>/assets/images/event-query.png); background-attachment: fixed;">

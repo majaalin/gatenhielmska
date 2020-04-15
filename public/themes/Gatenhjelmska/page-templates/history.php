@@ -1,4 +1,4 @@
-<?php /* Template name: History */ ?>
+<?php /* Template name: Historia */ ?>
 
 <?php get_header(); ?>
 

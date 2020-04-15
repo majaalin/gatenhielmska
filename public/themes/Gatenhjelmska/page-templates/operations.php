@@ -1,4 +1,4 @@
-<?php /* Template name: Operations */ ?>
+<?php /* Template name: Verksamhet */ ?>
 
 <?php get_header(); ?>
 <section class="operations">

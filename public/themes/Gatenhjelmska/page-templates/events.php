@@ -1,4 +1,4 @@
-<?php /* Template name: Events */ ?>
+<?php /* Template name: Event */ ?>
 
 <?php get_header(); ?>
 <section class="events">

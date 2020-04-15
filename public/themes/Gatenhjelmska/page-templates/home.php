@@ -1,4 +1,4 @@
-<?php /* Template name: Home */ ?>
+<?php /* Template name: Start */ ?>
 
 <?php $heroImage = get_field('hero_frontpage'); ?>
 

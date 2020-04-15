@@ -1,4 +1,4 @@
-<?php /* Template name: News */ ?>
+<?php /* Template name: Nyheter */ ?>
 
 <?php get_header(); ?>
 

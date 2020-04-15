@@ -1,4 +1,4 @@
-<?php /* Template name: Contact */ ?>
+<?php /* Template name: Kontakt */ ?>
 
 <?php get_header(); ?>
 <section class="contact-info">
