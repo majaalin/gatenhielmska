@@ -15,7 +15,8 @@
                 $custom_logo_id = get_theme_mod('custom_logo');
                 $image = wp_get_attachment_image_src($custom_logo_id, 'full');
             ?>
-            <img class="logo" src="<?php echo $image[0]; ?>" alt="">
+
+<a class="logo" href="http://localhost:1337"><img src="<?php echo $image[0]; ?>" alt=""></a>
             <?php wp_nav_menu(['theme_location' => 'navigation']); ?>
         </div>
     </header>
