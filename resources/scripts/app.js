@@ -37,6 +37,7 @@ function scrollFunction() {
     });
   } else {
     document.querySelector("header").style.backgroundColor = "transparent";
+    document.querySelector(".mobile").style.backgroundColor = "transparent";
     subMenu.forEach(element => {
       element.style.backgroundColor = "transparent";
     });
