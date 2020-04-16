@@ -1,44 +1,45 @@
-import PreloadningScreen from './pageLoadWrap';
-import smoothScroll from './smoothScroll';
+import PreloadningScreen from "./pageLoadWrap";
+import smoothScroll from "./smoothScroll";
 // Preloading Screen on landing page
-if (document.querySelector('.home__Preloading-Screen')) {
+if (document.querySelector(".home__Preloading-Screen")) {
   PreloadningScreen.templatePageLoad();
 
   const myStorage = window.sessionStorage;
 
-  if (myStorage.getItem('hasCodeRunBefore') === null) {
+  if (myStorage.getItem("hasCodeRunBefore") === null) {
     setTimeout(() => {
       PreloadningScreen.onLoadWrap();
-      myStorage.setItem('hasCodeRunBefore', 'yes');
+      myStorage.setItem("hasCodeRunBefore", "yes");
     }, 2000);
   } else {
     PreloadningScreen.onLoadWrap();
   }
 }
 // Smooth Scroll
-const homeScrollButton = document.querySelector('.homeScrollButton');
+const homeScrollButton = document.querySelector(".homeScrollButton");
 
 if (homeScrollButton) {
-  homeScrollButton.addEventListener('click', function() {
-    smoothScroll.smoothScroll('#anchor1', 1000);
+  homeScrollButton.addEventListener("click", function() {
+    smoothScroll.smoothScroll("#anchor1", 1000);
   });
 }
 
 // On scroll change header color
 function scrollFunction() {
-  const subMenu = document.querySelectorAll('.sub-menu');
+  const subMenu = document.querySelectorAll(".sub-menu");
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    document.querySelector('header').style.backgroundColor =
-      'rgba(13, 17, 23, 0.97)';
-    document.querySelector('.mobile').style.backgroundColor =
-      'rgba(13, 17, 23, 0.97)';
+    document.querySelector("header").style.backgroundColor =
+      "rgba(13, 17, 23, 0.97)";
+    document.querySelector(".mobile").style.backgroundColor =
+      "rgba(13, 17, 23, 0.97)";
     subMenu.forEach(element => {
-      element.style.backgroundColor = 'rgba(13, 17, 23, 0.97)';
+      element.style.backgroundColor = "rgba(13, 17, 23, 0.97)";
     });
   } else {
-    document.querySelector('header').style.backgroundColor = 'transparent';
+    document.querySelector("header").style.backgroundColor = "transparent";
+    document.querySelector(".mobile").style.backgroundColor = "transparent";
     subMenu.forEach(element => {
-      element.style.backgroundColor = 'transparent';
+      element.style.backgroundColor = "transparent";
     });
   }
 }
@@ -46,18 +47,20 @@ window.onscroll = function() {
   scrollFunction();
 };
 
-const hamburger = document.querySelector('.nav-icon');
-const cross = document.querySelector('.cross');
+const hamburger = document.querySelector(".nav-icon");
+const cross = document.querySelector(".cross");
 function open() {
-  const menu = document.querySelector('.mobile-menu ');
-  menu.classList.toggle('open');
-  cross.classList.toggle('cross-visible');
-  hamburger.classList.toggle('nav-icon-visible');
+  const menu = document.querySelector(".mobile-menu ");
+  menu.classList.toggle("open");
+  cross.classList.toggle("cross-visible");
+  hamburger.classList.toggle("nav-icon-visible");
+  document.querySelector(".mobile").style.backgroundColor =
+    "rgba(13, 17, 23, 0.97)";
 }
-hamburger.addEventListener('click', open);
-cross.addEventListener('click', open);
+hamburger.addEventListener("click", open);
+cross.addEventListener("click", open);
 
-hamburger.addEventListener('click', open);
+hamburger.addEventListener("click", open);
 // function openMenu() {
 //   const mobile = document.querySelector(".mobile");
 //   const mobilMenu = mobile.querySelectorAll(".sub-menu");
@@ -67,13 +70,13 @@ hamburger.addEventListener('click', open);
 //   });
 
 // Fetch from rest api and print out instagram content.
-if (document.querySelector('.gallery')) {
+if (document.querySelector(".gallery")) {
   const printOutGallery = data => {
     data.data.forEach(media => {
-      const divContainer = document.querySelector('.gallery-container');
+      const divContainer = document.querySelector(".gallery-container");
       if (
-        media.media_type === 'IMAGE' ||
-        media.media_type === 'CAROUSEL_ALBUM'
+        media.media_type === "IMAGE" ||
+        media.media_type === "CAROUSEL_ALBUM"
       ) {
         const mediaUrlTemplate = `<img src="${media.media_url}" />`;
         const template = `<div class="gallery-inner-container">${mediaUrlTemplate}</div>`;
@@ -86,25 +89,25 @@ if (document.querySelector('.gallery')) {
     });
   };
 
-  fetch('/wp-json/wl/v1/instagram')
+  fetch("/wp-json/wl/v1/instagram")
     .then(res => res.json())
     .then(data => {
       printOutGallery(data);
     });
 }
 
-if (document.querySelector('.event-container')) {
+if (document.querySelector(".event-container")) {
   const showModalForEventsCard = () => {
-    const cardbuttons = document.querySelectorAll('.card-button');
-    const modalOuter = document.querySelector('.modal-outer');
-    const modalInner = document.querySelector('.modal-inner');
+    const cardbuttons = document.querySelectorAll(".card-button");
+    const modalOuter = document.querySelector(".modal-outer");
+    const modalInner = document.querySelector(".modal-inner");
 
     const handelCardButtonClick = event => {
       const button = event.currentTarget;
-      const card = button.closest('.box');
+      const card = button.closest(".box");
 
-      const imgSrc = card.querySelector('img').src;
-      const h1 = card.querySelector('h1').textContent;
+      const imgSrc = card.querySelector("img").src;
+      const h1 = card.querySelector("h1").textContent;
       // const description = card.querySelector('.event-description-p')
       //   .textContent;
       // const hiddenElements = card.querySelectorAll('.hidden');
@@ -115,26 +118,26 @@ if (document.querySelector('.event-container')) {
     <h1>${h1}</h1>
     `;
 
-      modalOuter.classList.add('open');
+      modalOuter.classList.add("open");
     };
 
     cardbuttons.forEach(button =>
-      button.addEventListener('click', handelCardButtonClick)
+      button.addEventListener("click", handelCardButtonClick)
     );
 
     const removeModal = () => {
-      modalOuter.classList.remove('open');
+      modalOuter.classList.remove("open");
     };
 
-    modalOuter.addEventListener('click', event => {
-      const isOutSide = !event.target.closest('.modal-inner');
+    modalOuter.addEventListener("click", event => {
+      const isOutSide = !event.target.closest(".modal-inner");
       if (isOutSide) {
         removeModal();
       }
     });
 
-    window.addEventListener('keydown', event => {
-      if (event.key === 'Escape') {
+    window.addEventListener("keydown", event => {
+      if (event.key === "Escape") {
         removeModal();
       }
     });
@@ -142,18 +145,18 @@ if (document.querySelector('.event-container')) {
 
   const printOutDayAndMonth = date => {
     const months = [
-      'Jan',
-      'Feb',
-      'Mar',
-      'Apr',
-      'Maj',
-      'Jun',
-      'Jul',
-      'Aug',
-      'Sep',
-      'Oct',
-      'Nov',
-      'Dec',
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "Maj",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
     ];
 
     const d = new Date(date);
@@ -166,17 +169,17 @@ if (document.querySelector('.event-container')) {
       month,
       year,
       dateStr: `${day}/${month}/${year}`,
-      monthString: months[month],
+      monthString: months[month]
     };
 
     return dateHolder;
   };
 
   const printOutCategory = str => {
-    if (str === undefined || str === 'OTHER') {
-      return '';
+    if (str === undefined || str === "OTHER") {
+      return "";
     }
-    const splitStr = str.split('_');
+    const splitStr = str.split("_");
     const lowerStr = splitStr[0].toLowerCase();
     const res = lowerStr.replace(/^./, lowerStr[0].toUpperCase());
     return `${res}`;
@@ -184,30 +187,30 @@ if (document.querySelector('.event-container')) {
 
   const setGridOnEvents = i => {
     const grids = [
-      'box landscape3',
-      'box',
-      'box landscape2',
-      'box landscape2',
-      'box',
-      'box',
-      'box',
-      'box landscape2',
-      'box landscape2',
+      "box landscape3",
+      "box",
+      "box landscape2",
+      "box landscape2",
+      "box",
+      "box",
+      "box",
+      "box landscape2",
+      "box landscape2"
     ];
 
     return `${grids[i]}`;
   };
 
   const printOutDateLineInGrid = dateObject => {
-    const divContainer = document.querySelector('.event-container');
+    const divContainer = document.querySelector(".event-container");
     const template = `<div class="breakline"><p class="breakline-text">Event för ${dateObject.monthString} ${dateObject.year}</p></div>`;
     divContainer.innerHTML += template;
   };
 
   const printOutEvents = data => {
-    const divContainer = document.querySelector('.event-container');
+    const divContainer = document.querySelector(".event-container");
     let gridCount = 0;
-    let monthCount = '';
+    let monthCount = "";
 
     data.forEach(event => {
       if (gridCount === 9) {
@@ -232,7 +235,7 @@ if (document.querySelector('.event-container')) {
         }
       }
 
-      const div = document.createElement('div');
+      const div = document.createElement("div");
       div.className = setGridOnEvents(gridCount);
 
       const template = `
@@ -253,7 +256,7 @@ if (document.querySelector('.event-container')) {
     showModalForEventsCard();
   };
 
-  fetch('/wp-json/wl/v1/facebook')
+  fetch("/wp-json/wl/v1/facebook")
     .then(res => res.json())
     .then(data => {
       printOutEvents(data);
