@@ -1,9 +1,8 @@
-# WordPress Website for Gatenhielmska Huset
+# WordPress website for Gatenhielmska Huset
 
 ![Image description](readme.png)
 
-## Installing
-?
+A website build in WordPress for Gatenhielmska Huset where they easy can upload articles and information about their company. The website is also connected with Facebook and Instagram, to make it easy to uplode upcoming events and pictures to the gallery. 
 
 ## Built With
 - WordPress
