@@ -1,27 +1,30 @@
-# WordPlate
+# WordPress website for Gatenhielmska Huset
 
-[![WordPlate](https://cloud.githubusercontent.com/assets/499192/24309675/09eec350-10cd-11e7-98f3-094003bc8e15.png)](https://wordplate.github.io)
+![Image description](readme.png)
 
-WordPlate is a modern WordPress stack which simplifies WordPress development.
+A website build in WordPress for Gatenhielmska Huset where they easy can upload articles and information about their company. The website is also connected with Facebook and Instagram, to make it easy to uplode upcoming events and pictures to the gallery. 
 
-```sh
-$ composer create-project wordplate/wordplate
-```
+## Built With
+- WordPress
+- PHP
+- JavaScript
 
-[![Build Status](https://badgen.net/travis/wordplate/framework/master)](https://travis-ci.org/wordplate/framework)
-[![Coverage Status](https://badgen.net/codecov/c/github/wordplate/framework)](https://codecov.io/github/wordplate/framework)
-[![Total Downloads](https://badgen.net/packagist/dt/wordplate/framework)](https://packagist.org/packages/wordplate/framework)
-[![Latest Version](https://badgen.net/github/release/wordplate/wordplate)](https://github.com/wordplate/wordplate/releases)
-[![License](https://badgen.net/packagist/license/wordplate/wordplate)](https://packagist.org/packages/wordplate/wordplate)
+## Plugin List
+- Advanced Custom Fields
+- Facebook Event api
+- Form Maker
+- Duplicate Page
+- Duplicate Post
+- Hide Updates
+- Instagram Basic api
+- Polylang
+- SiteOrigin Widgets Bundle
+- Soil
+- WP Mail SMTP
 
-## Documentation
-
-Visit the [official documentation](https://wordplate.github.io/) page if you want to dive right in and start building WordPress applications with WordPlate. The documentation is thorough, complete, and makes it a breeze to get started learning WordPlate.
-
-## Contributing
-
-Please review our [contribution guidelines](https://github.com/wordplate/framework/blob/master/CONTRIBUTING.md) before submitting a pull request.
+## Authors
+- Andreas Pandzic
+- Maja Alin
 
 ## License
-
-[MIT](LICENSE) © [Vincent Klaiber](https://doubledip.se)
+This project is licensed under the MIT License.
