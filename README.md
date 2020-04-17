@@ -41,6 +41,7 @@ php -S localhost:8000
 - WP Mail SMTP
 
 ## Future features
+- Scheduling WP Cron Events on plugin for facebook and instagram api 
 
 
 ## Authors
