@@ -1,5 +1,7 @@
 # WordPress Website for Gatenhielmska Huset
 
+![Image description](readme.png)
+
 ## Installing
 ?
 
