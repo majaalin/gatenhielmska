@@ -1,3 +1,11 @@
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 section {
     padding-top: 200px;
 }
@@ -22,7 +30,7 @@ section {
         max-width: 1440px;
         height: 34px;
         width: 100vw;
-    
+
         .logo {
             margin: 0;
             padding: 0;
@@ -78,7 +86,7 @@ section {
             list-style: none;
             padding: 0px;
             width: 75px;
-            margin: 0 20px;
+            margin: 0 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -146,9 +154,9 @@ section {
     .sub-menu:hover {
         visibility: visible;
         height: auto;
-        opacity: 1;            
+        opacity: 1;
         z-index: 4;
-        transform: translateX(0); 
+        transform: translateX(0);
 
         a {
             opacity: 1;
@@ -164,6 +172,8 @@ section {
 @media screen and (max-width: 960px) {
     .desktop {
         display: none;
+        visibility: hidden;
+        opacity: 0;
     }
 
     .mobile {
@@ -227,7 +237,7 @@ section {
             ul {
                 padding-inline-start: 0px;
                 margin: 2px 16px;
-        
+
                 .menu-item-has-children {
                     height: auto;
                     width: 100%;
@@ -235,13 +245,13 @@ section {
                     flex-direction: column;
                     border-top: 1px solid $color-dark09;
                     font-weight: 400;
-                    
+
                     a:nth-last-child(2) {
                         display: flex;
                         justify-content: space-between;
                         width: 100%;
                     }
-                
+
                     a:nth-last-child(2)::after {
                         content: '\25BE';
                         font-size: 14px;
@@ -293,7 +303,7 @@ section {
     .open {
         display: block;
         background: rgba(13, 17, 23, 0.98);
-        position: absolute;            
+        position: absolute;
         width: 100vw;
         margin: 0;
         padding: 0;

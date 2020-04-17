@@ -1,8 +1,8 @@
 <?php /* Template name: Eventförfrågan */ ?>
 
 <?php get_header(); ?>
-<section class="event-query" style="background: linear-gradient(0deg, rgba(25, 29, 35, 0.8), rgba(25, 29, 35, 0.8)), url(<?php bloginfo('template_directory') ?>/assets/images/event-query.png); background-attachment: fixed;">
-    <div class="event-query-wrapper">    
+<section class="event-query" style="background: linear-gradient(0deg, rgba(25, 29, 35, 0.4), rgba(25, 29, 35, 0.4)), url(<?php bloginfo('template_directory') ?>/assets/images/event-query.png); background-attachment: fixed;">
+    <div class="event-query-wrapper">
         <div class="contact-form">
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
@@ -12,7 +12,7 @@
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
-        <div class="contact"> 
+        <div class="contact">
             <h2><?php the_field('sub-heading'); ?></h2>
             <div class="wrapper">
                 <img src="<?php bloginfo('template_directory') ?>/assets/images/address.png" alt="adress">
@@ -32,6 +32,6 @@
                 <img src="<?php bloginfo('template_directory') ?>/assets/images/facebook.png" alt="facebook">
             </div>
         </div>
-    </div>    
+    </div>
 </section>
 <?php get_footer(); ?>

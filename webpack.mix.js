@@ -1,6 +1,6 @@
-const mix = require("laravel-mix");
+const mix = require('laravel-mix');
 
-require("dotenv").config();
+require('dotenv').config();
 
 /*
  |--------------------------------------------------------------------------
@@ -15,14 +15,15 @@ require("dotenv").config();
 
 const theme = process.env.WP_THEME;
 
-mix.setResourceRoot("../");
+mix.setResourceRoot('../');
 mix.setPublicPath(`public/themes/${theme}/assets`);
 
-mix.sass("resources/styles/app.scss", "styles");
+mix.sass('resources/styles/app.scss', 'styles');
 
 mix.styles(
-  ["node_modules/normalize.scss/normalize.scss"],
-  "resources/styles/project/normalize.scss"
+  ['node_modules/normalize.scss/normalize.scss'],
+  'resources/styles/project/normalize.scss'
 );
 
-mix.js("resources/scripts/app.js", "scripts");
+mix.js('resources/scripts/app.js', 'scripts');
+mix.js('resources/scripts/heroloader.js', 'scripts');

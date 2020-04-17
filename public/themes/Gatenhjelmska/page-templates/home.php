@@ -3,13 +3,13 @@
 <?php $heroImage = get_field('hero_frontpage'); ?>
 
 <?php get_header(); ?>
+
 <section class="home">
-    <div class="home__Preloading-Screen"></div>
     <div class="home__wrapper">
         <!-- first view on landing page  -->
         <div class="home__first-view">
             <!-- background IMG  -->
-            <img class="home__hero-img" src="<?php echo $heroImage['image_']; ?>" alt="#">
+            <img class="home__hero-img" src="<?php echo $heroImage['image_']; ?>" alt="image">
             <!-- Header on first view -->
             <div class="home__header">
                 <div class="home__header-container"></div>
@@ -25,7 +25,6 @@
                             <a class="homeScrollButton" href="#anchor1"><img src="<?php bloginfo('template_directory') ?>/assets/images/down-arrow-white.png" /></a>
                             <div id="anchor1"></div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -40,4 +39,5 @@
         </div>
     </div>
 </section>
+
 <?php get_footer(); ?>

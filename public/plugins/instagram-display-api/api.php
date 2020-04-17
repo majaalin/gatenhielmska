@@ -11,11 +11,11 @@ function wl_instagram()
 {
     require_once(plugin_dir_path(__DIR__) . 'instagram-display-api/instagram_basic_display_api.php');
 
-    $accessToken = 'IGQVJWa3BNbU5JOVVveHZAzV3VULTZAabTVuVjZAoc3FxdXpobjQyUkpJMy1wbkUtd2k4VThKa1hqOXVRdzJkX01kd3NBdEZA5VDdORmQ1WG9adk8yaF93anJRcUsyQXIyZAVVVS2JteGpKeW1mY0xZAOU0wcwZDZD';
+    $accessToken = 'IGQVJVSENkSW1CM19abzBOMER3djZAZAWlRmU0s5bm56R1k1ZAFRDYTJoLXBNQVVEeGRJeE5mV3lDZAFN3VVJ4M0xPTjJVbG9TY1RGRXdaTGFBc3dLQkZAsQ2RsSFZAJNjNORTNSX2dZAREVn';
 
     $params = array(
         'access_token' => $accessToken,
-        'user_id' => '17841400619475331'
+        'user_id' => '17841428809878118'
     );
 
     $ig = new instagram_basic_display_api($params);

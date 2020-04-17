@@ -1,20 +1,5 @@
-import PreloadningScreen from './pageLoadWrap';
 import smoothScroll from './smoothScroll';
-// Preloading Screen on landing page
-if (document.querySelector('.home__Preloading-Screen')) {
-  PreloadningScreen.templatePageLoad();
 
-  const myStorage = window.sessionStorage;
-
-  if (myStorage.getItem('hasCodeRunBefore') === null) {
-    setTimeout(() => {
-      PreloadningScreen.onLoadWrap();
-      myStorage.setItem('hasCodeRunBefore', 'yes');
-    }, 2000);
-  } else {
-    PreloadningScreen.onLoadWrap();
-  }
-}
 // Smooth Scroll
 const homeScrollButton = document.querySelector('.homeScrollButton');
 
@@ -42,6 +27,7 @@ function scrollFunction() {
     });
   }
 }
+
 window.onscroll = function() {
   scrollFunction();
 };
@@ -53,18 +39,12 @@ function open() {
   menu.classList.toggle('open');
   cross.classList.toggle('cross-visible');
   hamburger.classList.toggle('nav-icon-visible');
+  document.querySelector('.mobile').style.backgroundColor =
+    'rgba(13, 17, 23, 0.97)';
 }
 hamburger.addEventListener('click', open);
 cross.addEventListener('click', open);
-
 hamburger.addEventListener('click', open);
-// function openMenu() {
-//   const mobile = document.querySelector(".mobile");
-//   const mobilMenu = mobile.querySelectorAll(".sub-menu");
-
-//   mobilMenu.forEach(menu => {
-//     menu.classList.toggle("sub-menu-open");
-//   });
 
 // Fetch from rest api and print out instagram content.
 if (document.querySelector('.gallery')) {
@@ -94,6 +74,83 @@ if (document.querySelector('.gallery')) {
 }
 
 if (document.querySelector('.event-container')) {
+  const firstLettertoUppercase = str => {
+    const lowerStr = str.toLowerCase();
+    const res = lowerStr.replace(/^./, lowerStr[0].toUpperCase());
+    return res;
+  };
+
+  const printOutDayAndMonth = date => {
+    const monthsShort = [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'Maj',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec',
+    ];
+    const monthsLong = [
+      'januari',
+      'februari',
+      'mars',
+      'april',
+      'maj',
+      'jun',
+      'jul',
+      'augusti',
+      'september',
+      'october',
+      'november',
+      'december',
+    ];
+
+    const hourSingel = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    const options = { weekday: 'long' };
+    const d = new Date(date);
+    let minutes = '';
+    let hour = '';
+    if (d.getMinutes() === 0) {
+      minutes = `${d.getMinutes()}0`;
+    } else {
+      minutes = d.getMinutes();
+    }
+
+    if (hourSingel[d.getHours()] === d.getHours()) {
+      hour = `0${d.getHours()}`;
+    } else {
+      hour = d.getHours();
+    }
+
+    const day = d.getDate();
+    const dayString = firstLettertoUppercase(
+      new Intl.DateTimeFormat('sv-SE', options).format(d)
+    );
+    const month = d.getMonth(); // returns month from 0-11.
+    const year = d.getFullYear();
+    const monthStringLong = monthsLong[month];
+
+    console.log(monthsShort[month]);
+
+    const dateHolder = {
+      day,
+      month,
+      year,
+      dayMonthYear: `${day}/${month}/${year}`,
+      monthStringShort: monthsShort[month],
+      dayString,
+      modaltime: `${dayString} ${day} ${monthStringLong} ${year} kl. ${hour}:${minutes}`,
+    };
+
+    return dateHolder;
+  };
+
   const showModalForEventsCard = () => {
     const cardbuttons = document.querySelectorAll('.card-button');
     const modalOuter = document.querySelector('.modal-outer');
@@ -105,17 +162,45 @@ if (document.querySelector('.event-container')) {
 
       const imgSrc = card.querySelector('img').src;
       const h1 = card.querySelector('h1').textContent;
-      // const description = card.querySelector('.event-description-p')
-      //   .textContent;
-      // const hiddenElements = card.querySelectorAll('.hidden');
-      // console.log(description);
+      const description = card.querySelector('.event-description').textContent;
+      const ticketUrl = card.querySelector('.event-ticket').textContent;
+      const startTime = card.querySelector('.event-startTime').textContent;
+      const address = card.querySelector('.event-address').textContent;
+      const owner = card.querySelector('.event-owner').textContent;
+      const id = card.querySelector('.event-id').textContent;
 
       modalInner.innerHTML = `
-    <img class="modalImg" src="${imgSrc}">
-    <h1>${h1}</h1>
+      <div class="modal-header">
+        <div class="modal-filter"></div>
+        <img class="modal-img" src="${imgSrc}">
+        <h1 class="modal-h1">${h1}</h1>
+        <div class="modal-button-container">
+          <a class="modal-link" href="${ticketUrl}"><button class="modal-button-buy">Köp biljett</button></a>
+          <a class="modal-link" href="https://www.facebook.com/events/${id}"><button class="modal-button-facebook">Se eventet på facebook</button></a>
+        </div>
+      </div>
+      <div class="modal-body">
+          <div class="modal-li-container">
+            <ul class="modal-firstList">
+            <li>Tid:</li>
+            <li>Plats:</li>
+            <li>Arrangeras av:</li>
+            </ul>
+            <ul class="modal-secoundList">
+            <li>${startTime}</li>
+            <li>${address}</li>
+            <li>${owner}</li>
+            </ul>
+          </div>
+        <p class="modal-description">${description}</p>
+      </div>
     `;
 
       modalOuter.classList.add('open');
+
+      if (window.innerWidth > 960) {
+        document.querySelector('header').style.display = 'none';
+      }
     };
 
     cardbuttons.forEach(button =>
@@ -124,6 +209,10 @@ if (document.querySelector('.event-container')) {
 
     const removeModal = () => {
       modalOuter.classList.remove('open');
+
+      if (window.innerWidth > 960) {
+        document.querySelector('header').style.display = 'block';
+      }
     };
 
     modalOuter.addEventListener('click', event => {
@@ -140,46 +229,13 @@ if (document.querySelector('.event-container')) {
     });
   };
 
-  const printOutDayAndMonth = date => {
-    const months = [
-      'Jan',
-      'Feb',
-      'Mar',
-      'Apr',
-      'Maj',
-      'Jun',
-      'Jul',
-      'Aug',
-      'Sep',
-      'Oct',
-      'Nov',
-      'Dec',
-    ];
-
-    const d = new Date(date);
-    const day = d.getDate();
-    const month = d.getMonth(); // returns month from 0-11.
-    const year = d.getFullYear();
-
-    const dateHolder = {
-      day,
-      month,
-      year,
-      dateStr: `${day}/${month}/${year}`,
-      monthString: months[month],
-    };
-
-    return dateHolder;
-  };
-
   const printOutCategory = str => {
     if (str === undefined || str === 'OTHER') {
       return '';
     }
     const splitStr = str.split('_');
-    const lowerStr = splitStr[0].toLowerCase();
-    const res = lowerStr.replace(/^./, lowerStr[0].toUpperCase());
-    return `${res}`;
+
+    return `${firstLettertoUppercase(splitStr[0])}`;
   };
 
   const setGridOnEvents = i => {
@@ -200,7 +256,7 @@ if (document.querySelector('.event-container')) {
 
   const printOutDateLineInGrid = dateObject => {
     const divContainer = document.querySelector('.event-container');
-    const template = `<div class="breakline"><p class="breakline-text">Event för ${dateObject.monthString} ${dateObject.year}</p></div>`;
+    const template = `<div class="breakline"><p class="breakline-text">Event för ${dateObject.monthStringShort} ${dateObject.year}</p></div>`;
     divContainer.innerHTML += template;
   };
 
@@ -239,11 +295,16 @@ if (document.querySelector('.event-container')) {
       <div class="event-filter"></div>
       <p class="event-header-p"> ${printOutCategory(event.category)} Event - ${
         dateObject.day
-      } ${dateObject.monthString}</p>
+      } ${dateObject.monthStringShort}</p>
       <h1>${event.name}</h1>
       <button class="card-button">Anmäl dig</button>
       <img src="${event.cover.source}">
-      <p class="hidden event-description-p">${event.description}</p>
+      <p class="hidden event-description">${event.description}</p>
+      <p class="hidden event-ticket">${event.ticket_uri}</p>
+      <p class="hidden event-startTime">${dateObject.modaltime}</p>
+      <p class="hidden event-address">${event.place.name}</p>
+      <p class="hidden event-owner">${event.owner.name}</p>
+      <p class="hidden event-id">${event.id}</p>
       `;
 
       div.innerHTML = template;

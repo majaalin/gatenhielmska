@@ -7,4 +7,4 @@ uploads
 wordpress
 !plugins/facebook-event-api/
 !plugins/instagram-display-api/
-plugins/facebook-event-api/defines.php
+!plugins/facebook-event-api/defines.php

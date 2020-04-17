@@ -51,8 +51,9 @@
 @media screen and (min-width: 960px) {
   .gallery {
     .gallery-wrapper {
-      max-width: 1440px;
+      max-width: 1328px;
       box-sizing: border-box;
+      margin-bottom: 60px;
       h1 {
         font-size: $h1-large;
         margin-bottom: 150px;
@@ -68,7 +69,7 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 10px;
         grid-auto-flow: dense;
-        max-width: 1440px;
+        max-width: 1328px;
 
         .gallery-inner-container{
           width: 100%;
